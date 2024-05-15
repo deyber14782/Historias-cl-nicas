@@ -1,0 +1,1092 @@
+* {
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+h2 {
+    font-size: 24px;
+    padding: 10px;
+    color: aliceblue;
+}
+
+input {
+    border-radius: 5px;
+    border-color: aliceblue;
+}
+
+select {
+    border-radius: 5px;
+    border-color: aliceblue;
+}
+
+select {
+    border-radius: 5px;
+    border-color: black;
+}
+
+header{
+    background-color: #2c2c2c;
+}
+
+section{
+    background-color: #2c2c2c;
+    color: aliceblue;
+}
+
+div{
+    border-color: aliceblue;
+}
+
+
+/*Título*/
+
+h1 {
+    margin-left: 25%;
+    font-size: 30px;
+    padding: 20px;
+    color: aliceblue;
+}
+
+/*Contenido Principal*/
+
+.main {
+    padding: 10px;
+}
+
+.container {
+    border-style: solid;
+    padding: 20px;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: aliceblue;
+    width: 80%;
+    margin-left: 15%;
+}
+
+#sidebar {
+    position: fixed;
+    width: 180px;
+    height: 100%;
+    background: #ffffff;
+    left: 0;
+    transition: all 500ms linear;
+    overflow: scroll;
+}
+
+
+#sidebar ul li {
+    list-style: none;
+    padding: 15px 10px;
+    border-bottom: 1.5px solid rgb(0, 0, 0);
+    text-align: center;
+}
+
+#sidebar ul li a {
+    text-decoration: none;
+    color: rgba(28, 28, 28, 0.9);
+}
+
+.logo {
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    display: block;
+    margin: 0 auto;
+}
+
+/*Contenido Información Personal*/
+
+.form1 {
+    display: grid;
+    row-gap: 10px;
+    padding: 20px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+}
+
+.box0 {
+    display: grid;
+    grid-template-columns: 55% 50%;
+}
+
+.box1 {
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+}
+
+
+.box3 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.box3 input {
+    width: 80%;
+}
+
+.box4 {
+    display: grid;
+    grid-template-columns: 30% 40% 50%;
+}
+
+.box4 select {
+    width: 70%;
+}
+
+.box4 input {
+    width: 40%;
+}
+.box5 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.box5 input {
+    width: 75%;
+}
+
+.box6 {
+    display: grid;
+    grid-template-columns: 50% 25% 25%;
+}
+
+.box6 input {
+    width: 55%;
+}
+
+.box7 {
+    display: grid;
+    grid-template-columns: 35% 35% 35%;
+}
+
+
+.box9 {
+    display: grid;
+    grid-template-columns: 35% 35% 35%;
+}
+
+.box9 input {
+    width: 50%;
+}
+
+.box11 {
+    display: grid;
+    grid-template-columns: 50% 25% 25%;
+}
+
+.box11 input {
+    width: 55%;
+}
+
+/*Contenido Anamnesis*/
+
+.form2 {
+    display: grid;
+    row-gap: 10px;
+    padding: 20px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: aliceblue;
+}
+
+.box12 label {
+    padding: 5px;
+}
+
+.box13 label {
+    padding: 5px;
+}
+
+.box16 label {
+    padding: 5px;
+}
+
+textarea {
+    margin-top: 2px;
+    resize: none;
+    width: 90%;
+    height: 20px;
+    padding: 20px;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: aliceblue;
+}
+
+/*Contenido Anamnesis*/
+
+.form2 {
+    display: grid;
+    row-gap: 10px;
+    padding: 20px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: aliceblue;
+}
+
+.box12 label {
+    padding: 5px;
+}
+
+.box13 label {
+    padding: 5px;
+}
+
+.box16 label {
+    padding: 5px;
+}
+
+textarea {
+    margin-top: 2px;
+    resize: none;
+    width: 90%;
+    height: 20px;
+    padding: 20px;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: aliceblue;
+}
+
+/*Contenido Lensometría*/
+
+.form3 {
+    display: grid;
+    row-gap: 10px;
+    padding: 20px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: aliceblue;
+}
+
+table {
+    width: 100%;
+    border: 1px solid;
+    border-color: aliceblue;
+}
+
+tr,
+td {
+    text-align: center;
+    vertical-align: top;
+    border: 1px solid;
+    border-collapse: collapse;
+    padding: 0.3em;
+    caption-side: bottom;
+    border-color: aliceblue;
+}
+
+table tr td input {
+    width: 90%;
+    height: 20px;
+    margin: 5px;
+}
+
+.box13 {
+    display: grid;
+    grid-template-columns: 35% 30% 35%;
+}
+
+.box13 input {
+    width: 50%;
+}
+
+/*Contenido Agudeza visual*/
+
+.form4 {
+    display: grid;
+    row-gap: 10px;
+    padding: 20px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: aliceblue;
+}
+
+.box17 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.box17 input {
+    width: 70%;
+}
+
+.box18 {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+.box18 input {
+    width: 25%;
+}
+
+.box18 select {
+    width: 50%;
+}
+
+/*Contenido Examen externo*/
+
+.form5 {
+    display: grid;
+    row-gap: 10px;
+    padding: 20px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: aliceblue;
+}
+
+.box19 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    column-gap: 50px;
+}
+
+.box19 label {
+    padding: 5px;
+}
+
+.box_sub_19_1 {
+    display: grid;
+}
+
+.box_sub_19_1 textarea {
+    width: 60%;
+}
+
+.box_sub_19_2 {
+    display: grid;
+}
+
+.box_sub_19_2 textarea {
+    width: 60%;
+}
+
+/*Contenido Biomicroscopia*/
+
+.form6 {
+    display: grid;
+    row-gap: 10px;
+    padding: 20px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: aliceblue;
+}
+
+.box20 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    column-gap: 50px;
+}
+
+.box20 label {
+    padding: 5px;
+}
+
+.box20 h3 {
+    padding: 5px;
+    font-size: 20px;
+}
+
+.box20 .box_sub_20_1 div {
+    border-style: solid;
+    width: 300px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.box_sub_20_1 {
+    display: grid;
+}
+
+.box_sub_20_1 textarea {
+    width: 80%;
+}
+
+.box20 .box_sub_20_2 div {
+    border-style: solid;
+    width: 300px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.box_sub_20_2 {
+    display: grid;
+}
+
+.box_sub_20_2 textarea {
+    width: 80%;
+}
+
+/*Contenido Motiilidad ocular*/
+
+.form7 {
+    display: grid;
+    row-gap: 10px;
+    padding: 20px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: aliceblue;
+}
+
+.box21 {
+    display: grid;
+    grid-template-columns: 35% 40% 25%;
+}
+
+.box21 input {
+    width: 50%;
+}
+
+
+.box22 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    column-gap: 50px;
+}
+
+.box22 label {
+    padding: 5px;
+}
+
+
+.box_sub_22_1 {
+    display: grid;
+}
+
+
+.box_sub_22_2 {
+    display: grid;
+}
+
+.box_sub_22_2 textarea {
+    width: 80%;
+}
+
+.box23 {
+    display: grid;
+    grid-template-columns: 40% 25% 40%;
+}
+
+.box23 input {
+    width: 50%;
+}
+
+/*Contenido Reflejos pupilares*/
+
+.form8 {
+    display: grid;
+    row-gap: 10px;
+    padding: 20px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: aliceblue;
+}
+
+.box24 select {
+    width: 100%;
+}
+
+/*Contenido Medida de la desviación habitual*/
+
+.form9 {
+    display: grid;
+    row-gap: 10px;
+    padding: 20px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: aliceblue;
+}
+
+.box25 {
+    display: grid;
+    grid-template-columns: 45% 50% 55%;
+}
+
+/*Contenido Oftalmoscopia*/
+
+.form10 {
+    display: grid;
+    row-gap: 10px;
+    padding: 20px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: aliceblue;
+}
+
+.box26 {
+    display: grid;
+    grid-template-columns: 100%;
+    row-gap: 20px;
+}
+
+.box26 input {
+    width: 85%;
+}
+
+.box27 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    column-gap: 15px;
+}
+
+.box27 input{
+    width: 95%;
+}
+
+.box27 label{
+    padding: 50px 50px 50px 0;
+}
+
+/*Contenido Queratometría*/
+
+.form11 {
+    display: grid;
+    row-gap: 10px;
+    padding: 20px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: aliceblue;
+}
+
+.box28 {
+    display: grid;
+    grid-template-rows: 50% 50%;
+    row-gap: 20px; 
+    column-gap: 100px;
+}
+
+.box28 input{
+    width: 28%;
+    
+}
+
+.box28 .label{
+    margin-left: 100px;
+}
+
+/*Contenido Retinoscopia estática*/
+
+.form12 {
+    display: grid;
+    row-gap: 20px;
+    padding: 20px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: aliceblue;
+}
+
+.box29 {
+    display: grid;
+    grid-template-rows: 50% 50%;
+    row-gap: 20px;  
+}
+
+.box29 input{
+    width: 30%;
+}
+
+.box29 .label{
+    margin-left: 100px;
+}
+
+
+/*Contenido Retinoscopia dinámica*/
+
+.form13 {
+    display: grid;
+    row-gap: 10px;
+    padding: 20px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: aliceblue;
+}
+
+.box30 {
+    display: grid;
+    grid-template-rows: 50% 50%;
+    row-gap: 20px;  
+}
+
+.box30 input{
+    width: 30%;
+}
+
+/*Contenido Retinoscopia ciclopejia*/
+
+.form14 {
+    display: grid;
+    row-gap: 10px;
+    padding: 20px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: aliceblue;
+}
+
+.box31 {
+    display: grid;
+    grid-template-rows: 20% 20% 20%;
+    row-gap: 20px;  
+}
+
+.box31 input{
+    width: 30%;
+}
+
+/*Contenido Examen subjetivo*/
+
+.form15 {
+    display: grid;
+    row-gap: 10px;
+    padding: 20px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: aliceblue;
+}
+
+.box32 {
+    display: grid;
+    grid-template-rows: 50% 50%;
+    row-gap: 20px;  
+}
+
+.box32 input{
+    width: 20%;
+}
+
+/*Contenido Observaciones*/
+
+.form16 {
+    display: grid;
+    row-gap: 10px;
+    padding: 20px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: aliceblue;
+}
+
+/*Contenido Afinación VL y VP*/
+
+.form17 {
+    display: grid;
+    row-gap: 10px;
+    padding: 20px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: aliceblue;
+}
+
+.form33 {
+    display: grid;
+    row-gap: 10px;
+    padding: 20px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: aliceblue;
+}
+
+.box33 {
+    display: grid;
+    grid-template-rows: 20% 20% 20%;
+    row-gap: 20px;  
+}
+
+.box33 input{
+    width: 12%;
+}
+
+.box33 .label{
+    margin-left:100px ;
+}
+
+.box33 .input{
+    width: 30%;
+}
+
+/*Contenido Afinación VP*/
+
+.form18 {
+    display: grid;
+    row-gap: 10px;
+    padding: 20px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: aliceblue;
+}
+
+.form34 {
+    display: grid;
+    row-gap: 10px;
+    padding: 20px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: aliceblue;
+}
+
+.box34 {
+    display: grid;
+    grid-template-rows: 20% 20% 20%;
+    row-gap: 20px;  
+}
+
+.box34 input{
+    width: 45%;
+}
+
+/*Contenido Medida de la desviación inducida*/
+
+.form19 {
+    display: grid;
+    row-gap: 10px;
+    padding: 20px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: aliceblue;
+}
+
+.form35 {
+    display: grid;
+    row-gap: 10px;
+    padding: 20px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: aliceblue;
+}
+
+.box35 {
+    display: grid;
+    grid-template-rows: 20% 20%;
+    row-gap: 20px;  
+}
+
+.box35 select{
+    width: 28%;
+}
+
+.box35 input{
+    width: 28%;
+}
+
+/*Contenido Flexibilidad de acomodación mnocular*/
+
+.form20 {
+    display: grid;
+    row-gap: 10px;
+    padding: 20px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: aliceblue;
+}
+
+.form36 {
+    display: grid;
+    row-gap: 10px;
+    padding: 20px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: aliceblue;
+}
+
+.box36 {
+    display: grid;
+    grid-template-rows: 20%;
+    row-gap: 20px;  
+}
+
+
+.box36 input{
+    width: 10%;
+}
+
+/*Contenido Estereopsis*/
+
+.form21 {
+    display: grid;
+    row-gap: 10px;
+    padding: 20px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: aliceblue;
+}
+
+.form37 {
+    display: grid;
+    row-gap: 10px;
+    padding: 20px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: aliceblue;
+}
+
+.box37 {
+    display: grid;
+    grid-template-rows: 20%;
+    row-gap: 20px;  
+}
+
+
+.box37 input{
+    width: 47%;
+}
+
+/*Contenido Visión cromática*/
+
+.form22 {
+    display: grid;
+    row-gap: 10px;
+    padding: 20px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: aliceblue;
+}
+
+.form38 {
+    display: grid;
+    row-gap: 10px;
+    padding: 20px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: aliceblue;
+}
+
+.box38 {
+    display: grid;
+    grid-template-rows: 20%;
+    row-gap: 20px;  
+}
+
+
+.box38 input{
+    width: 28.7%;
+}
+
+/*Contenido Prescripción óptica*/
+
+.form23 {
+    display: grid;
+    row-gap: 10px;
+    padding: 20px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: aliceblue;
+}
+
+.form39 {
+    display: grid;
+    row-gap: 10px;
+    padding: 20px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: aliceblue;
+}
+
+.box39 {
+    display: grid;
+    grid-template-rows: 20%;
+    row-gap: 20px; 
+}
+
+.box39 div{
+    margin-top: 20px;
+}
+
+
+.box39 input{
+    width: 35%;
+}
+
+.box39 .label{
+    margin-left: 100px;
+}
+
+.box40 div{
+    margin-top: 20px;
+}
+
+.box40 input{
+    width: 35%;
+}
+
+.box40 .label{
+    margin-left: 140px;
+}
+
+/*Contenido Prescripción medicamentosa*/
+
+.form24 {
+    display: grid;
+    row-gap: 10px;
+    padding: 10px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: aliceblue;
+}
+
+.form41 {
+    display: grid;
+    row-gap: 10px;
+    padding: 20px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: aliceblue;
+}
+
+.box41 {
+    display: grid;
+    grid-template-rows: 20%;
+    row-gap: 20px; 
+}
+
+.box41 div{
+    margin-top: 20px;
+}
+
+
+.box41 input{
+    width: 25%;
+}
+
+
+
+/*Contenido Conducta*/
+
+.form25 {
+    display: grid;
+    row-gap: 10px;
+    padding: 20px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: aliceblue;
+}
+
+/*Contenido Remisiones*/
+
+.form26 {
+    display: grid;
+    row-gap: 10px;
+    padding: 20px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: aliceblue;
+}
+
+.box42 div{
+    margin-top: 20px;
+}
+
+.box41_sub input{
+    width: 77.5%;
+}
+
+.box42_sub1 input{
+    width: 38%;
+}
+
+.box42_sub1 select{
+    width: 38%;
+}
+
+#send{
+    height: 40px;
+    width: 180px;
+    border: none;
+    border-radius: 20px;
+    background: linear-gradient(to left, #d3d3d3, #222222);
+    color: #fff;
+    font-weight: bolder;
+    margin-top: 30px;
+    cursor: pointer;
+    outline: none;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.queratometriaRetinoscopia{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    column-gap: 1%;
+}
+
+.examenAfinacion{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    column-gap: 1%;
+}
+
+.examenBiomicroscopia{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    column-gap: 1%;
+}
+
+.refraccionSubjetivo{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    column-gap: 1%;
+}
+
+.tratamientoRemisiones{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    column-gap: 1%;
+}
+
+/* Responsive */
+
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+
+    *{
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+}
+
+@media (min-width: 425px) and (max-width: 767px) {
+
+}
+
+@media (min-width: 375px) and (max-width: 424px) {
+
+}
+
+@media (min-width: 320px) and (max-width: 374px) {
+
+}

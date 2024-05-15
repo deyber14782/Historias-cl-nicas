@@ -1,0 +1,11 @@
+.box{
+    display: grid;
+    column-gap: 1%;
+}
+
+.box select{
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 1%;
+    margin: 1%;
+}

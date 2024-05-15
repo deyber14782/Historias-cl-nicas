@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/certificates/prescripcionOptica.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>PRESCRIPCIÓN ÓPTICA DE USO OFTÁLMICO</title>
+</head>
+
+<body>
+    <div class="container" id="container">
+        <table id="table">
+            <tr>
+                <td  colspan="2"><img src="/assets/image/Logo_de_la_Universidad_Antonio_Nariño.svg.png">
+                </td>
+                <td colspan="3">Código: HC.FT.PO V003</td>
+            </tr>
+            <tr>
+                <td colspan="3">Revisado por: Johanna Garzón</td>
+                <td id="fechaHoy"></td>
+            </tr>
+            <tr>
+                <td colspan="2">FACULTAD DE OPTOMETRÍA</td>
+                <td>Elaborado por</td>
+                <td>Aprobado por: Johanna Garzón</td>
+            </tr>
+            <tr>
+                <td colspan="3">Prescripción Óptica de Uso Oftálmico</td>
+                <td id="fechaHoy2"></td>
+            </tr>
+        </table>
+
+        <div class="box1">
+            <div>
+                <label>Nombre: </label>
+                <input readonly id="nombre" style="width: 80%;">
+            </div>
+            <div>
+                <label>Tipo de Documento: </label>
+                <input readonly id="tipoDocumento" style="width: 12%;">
+            </div>
+            <div>
+                <label>Número de Documento: </label>
+                <input readonly id="numeroDocumento">
+            </div>
+        </div>
+
+        <div class="box2">
+            <div>
+                <label>Fecha elaboración: </label>
+                <input readonly style="width: 40%;" id="fecha">
+            </div>
+            <div>
+                <label>Lugar: </label>
+                <input readonly value="UAN - Sede Bogotá">
+            </div>
+            <div>
+                <label>EPS: </label>
+                <input readonly id="eps">
+            </div>
+            <div>
+                <label>Afiliación: </label>
+                <input readonly id="afiliacion">
+            </div>
+        </div>
+
+        <div class="box3">
+            <table>
+                <tr>
+                    <td>RX</td>
+                    <td>ESFERA</td>
+                    <td>CILINDRO</td>
+                    <td>EJE</td>
+                    <td>AV</td>
+                    <td>Add</td>
+                </tr>
+                <tr>
+                    <td>OD</td>
+                    <td id="esferaOD"></td>
+                    <td id="cilindroOD"></td>
+                    <td id="ejeOD"></td>
+                    <td id="avOD"></td>
+                    <td id="addOD"></td>
+                </tr>
+                <tr>
+                    <td>OI</td>
+                    <td id="esferaOI"></td>
+                    <td id="cilindroOI"></td>
+                    <td id="ejeOI"></td>
+                    <td id="avOI"></td>
+                    <td id="addOI"></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="box4">
+            <div class="box4_sub1">
+                <label>DNP: </label>
+                <label>OD: </label>
+                <input readonly id="dnpOD">
+                <label>OI: </label>
+                <input readonly id="dnpOI">
+            </div>
+            <div class="box4_sub1">
+                <label>Tipo de lente: </label>
+                <input readonly id="tipoLente">
+                <label>Filtro: </label>
+                <input readonly id="filtro">
+                <label>Material:</label>
+                <input readonly id="material">
+            </div>
+            <div class="box4_sub1">
+                <label>Vigencia de la prescripción: </label>
+                <input readonly style="width: 6%;" value="6 meses">
+            </div>
+            <div class="box4_sub1">
+                <label>Observaciones: </label>
+                <input readonly style="width: 70%;" id="observaciones">
+            </div>
+            <div class="box4_sub1">
+                <label>Próximo Control: </label>
+                <input readonly style="width: 30%;" id="proximoControl">
+            </div>
+        </div>
+
+        <div class="box5">
+            <div>
+                <hr>
+                <label>Firma y sello del docente</label>
+            </div>
+
+        </div>
+
+    </div>
+    <button class="imprimir" id="imprimir">Imprimir</button>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+        integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/controller/certificates/prescripcionOptica.js" type="module"></script>
+</body>
+
+</html>

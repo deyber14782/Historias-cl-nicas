@@ -1,0 +1,225 @@
+* {
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+body{
+    background-color: #2c2c2c;
+}
+
+.container{
+    border-style:solid;
+    color:aliceblue;
+    margin: 2%;
+    border-width: 1px;
+    padding: 2%;
+}
+
+table {
+    width: 95%;
+    border: 1px solid;
+    border-color: aliceblue;
+    margin: 2%;
+}
+
+tr,
+td {
+    text-align: center;
+    vertical-align: auto;
+    border: 1px solid #000;
+    border-collapse: collapse;
+    padding: 0.3em;
+    caption-side: bottom;
+    border-color: aliceblue;
+    color: aliceblue;
+    padding: 1%;
+}
+table tr td input {
+    width: 90%;
+    height: 20px;
+    margin: 5px;
+}
+
+img{
+    height: 100px;
+    width: 200px;
+}
+
+input {
+    border-radius: 5px;
+    border-color: aliceblue;
+}
+
+label{
+    color: aliceblue;
+}
+
+select {
+    border-radius: 5px;
+    border-color: black;
+}
+
+#send{
+    height: 40px;
+    width: 180px;
+    border: none;
+    border-radius: 20px;
+    background: linear-gradient(to left, #d3d3d3, #222222);
+    color: #fff;
+    font-weight: bolder;
+    margin: 2% 2% 2% 2%;
+    cursor: pointer;
+    outline: none;
+    margin-left: 50%;
+    transform: translateX(-50%);
+
+}
+
+/*Título*/
+
+h1 {
+    text-align: center;
+    font-size: 20px;
+    padding: 20px;
+    color: aliceblue;
+}
+
+/*Box 1*/
+
+.box1 {
+    display: grid;
+    row-gap: 10px;
+    padding: 20px;
+    border-width: 2px;
+    border-radius: 10px;
+}
+
+
+.box_sub1 {
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+}
+
+
+.box_sub2 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.box_sub2 input {
+    width: 80%;
+}
+
+.box_sub3 {
+    display: grid;
+    grid-template-columns: 30% 40% 50%;
+}
+
+.box_sub3 select {
+    width: 70%;
+}
+
+.box_sub3 input {
+    width: 40%;
+}
+
+.box_sub4 {
+    display: grid;
+    grid-template-columns: 35% 35% 35%;
+}
+
+.box_sub4 input {
+    width: 50%;
+}
+
+.box_sub5 {
+    display: grid;
+    grid-template-columns: 50% 25% 25%;
+}
+
+.box_sub5 input {
+    width: 55%;
+}
+
+/*Caja2*/
+
+.box2{
+    margin: 2%;
+    display: grid;
+    grid-template-columns: 27% 25% 25% 25%;
+}
+
+/*Caja3*/
+
+.box3{
+    padding: 0% 0% 0% 2%;
+}
+
+textarea{
+    margin-top: 2px;
+    resize: none;
+    width: 96%;
+    height: 100px;
+    padding: 20px;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: aliceblue;
+}
+
+/*Caja4*/
+
+.box4{
+    padding: 0% 0% 0% 2%;
+}
+
+.box4_sub1{
+    padding: 1% 1% 1% 0%;
+}
+
+/*Caja5*/
+
+.box5{
+    padding: 1% 0% 0% 2%;
+    display: grid;
+    grid-template-columns: 35% 35%;
+}
+
+
+.box5 select{
+    width: 70%;
+}
+
+.box5 input{
+    width: 70%;
+}
+
+/* Responsive */
+
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+
+    *{
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    *{
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 425px) and (max-width: 767px) {
+
+}
+
+@media (min-width: 375px) and (max-width: 424px) {
+
+}
+
+@media (min-width: 320px) and (max-width: 374px) {
+
+}

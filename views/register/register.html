@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Registrar</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="/styles/register/util.css">
+	<link rel="stylesheet" type="text/css" href="/styles/register/main.css">
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body style="background-color: #666666;">
+
+	<div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100">
+				<form class="login100-form validate-form" id="form">
+					<span class="login100-form-title p-b-43">
+						Registrar
+					</span>
+
+					<div class="wrap-input100 validate-input" >
+						<input class="input100" type="text" id="name">
+						<span class="focus-input100"></span>
+						<span class="label-input100">Nombre</span>
+					</div>
+
+					<div class="wrap-input100 validate-input">
+						<select class="input101" id="rol">
+							<option value="0">Selecciona una opción</option>
+							<option value="Profesor">Profesor</option>
+							<option value="Estudiante">Estudiante</option>
+                            <option value="Administrador">Administrador</option>
+						</select>
+						<span class="focus-input100"></span>
+						<span class="label-input100">Rol</span>
+					</div>
+
+					<div class="wrap-input100 validate-input">
+						<input class="input100" type="email" id="email">
+						<span class="focus-input100"></span>
+						<span class="label-input100">Correo</span>
+					</div>
+
+
+					<div class="wrap-input100 validate-input">
+						<input class="input100" type="password" id="password">
+						<span class="focus-input100"></span>
+						<span class="label-input100">Contraseña</span>
+					</div>
+
+					<div class="wrap-input100 validate-input">
+						<input class="input100" type="password" id="confirmPassword">
+						<span class="focus-input100"></span>
+						<span class="label-input100">Confirmar contraseña</span>
+					</div>
+
+
+					<div class="container-login100-form-btn">
+						<button class="login100-form-btn" id="register">
+							Registrar
+						</button>
+					</div>
+
+				</form>
+
+				<div class="login100-more" style="background-image: url('/assets/image/bg-01.jpg');">
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="module" src="/controller/register/register.js"></script>
+	<script src="/controller/register/jquery-3.2.1.min.js"></script>
+	<script src="/controller/register/main.js"></script>
+</body>
+
+</html>

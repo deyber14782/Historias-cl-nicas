@@ -1,0 +1,115 @@
+* {
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+body {
+    background-color: white;
+}
+
+.container {
+    border-style: solid;
+    color: black;
+    margin: 0.2%;
+    border-width: 1px;
+    padding: 1%;
+    background-color: white;
+}
+
+table {
+    width: 100%;
+    border: 1px solid;
+    border-color: black;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+tr,
+td {
+    text-align: center;
+    vertical-align: auto;
+    border: 1px solid black;
+    border-collapse: collapse;
+    caption-side: bottom;
+    border-color: black;
+    color: black;
+    padding: 0.3%;
+}
+
+img {
+    height: 50px;
+    width: 150px;
+}
+
+input {
+    border-width: 1px;
+    background-color: white;
+    border-color: black;
+    color: black;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+}
+
+label {
+    color: black;
+}
+
+
+.imprimir {
+    height: 40px;
+    width: 180px;
+    border: none;
+    border-radius: 20px;
+    background: linear-gradient(to left, #d3d3d3, #222222);
+    color: #fff;
+    font-weight: bolder;
+    margin: 2% 2% 2% 2%;
+    cursor: pointer;
+    outline: none;
+    margin-left: 50%;
+    transform: translateX(-50%);
+
+}
+
+/*Caja1*/
+
+.box1 {
+    margin: 2%;
+    display: grid;
+    grid-template-columns: 50% 20% 35%;
+}
+
+/*Caja2*/
+
+.box2 {
+    margin: 2%;
+    display: grid;
+    grid-template-columns: 27% 25% 25% 25%;
+}
+
+/*Caja4*/
+
+.box4 {
+    padding: 0.5% 0% 0% 2%;
+}
+
+.box4_sub1 {
+    padding: 1% 1% 1% 0%;
+}
+
+/*Caja5*/
+
+.box5 {
+    padding: 3% 7% 0% 5%;
+    display: flex;
+    justify-content: center;
+}
+
+.box5 hr {
+    width: 100%;
+    border-color: black;
+}

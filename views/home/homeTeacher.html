@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel="stylesheet">
+    <link rel="stylesheet" href="/styles/home/homeAdmin.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>Inicio</title>
+</head>
+
+<body>
+    <div class="sidebar">
+        <div class="top">
+            <div class="logo">
+                <i class="bx bx-glasses-alt"></i>
+                <span>Historias clínicas</span>
+            </div>
+            <i class="bx bx-menu" id="btn"></i>
+        </div>
+        <div class="user">
+            <img src="/assets/image/Digi-Optic.jpeg" alt="me" class="user-img">
+            <div>
+                <p class="bold" id="text"></p>
+                <p id="text2"></p>
+            </div>
+        </div>
+        <ul>
+            <li>
+                <a href="#">
+                    <i class="bx bx-book" id="agenda1"></i>
+                    <span class="nav-item" id="agenda2">Manejo</span><span class="nav-item" id="agenda3">&nbspde</span><span
+                        class="nav-item" id="agenda4">&nbspla</span><span class="nav-item" id="agenda5">&nbspagenda</span>
+                </a>
+                
+            </li>
+            <li>
+                <a href="#">
+                    <i class="bx bxs-user-rectangle" id="clinicHistoryMenu1"></i>
+                    <span class="nav-item" id="clinicHistoryMenu2">Historia</span><span class="nav-item" id="clinicHistoryMenu3">&nbspclínica</span>
+                </a>
+                
+            </li>
+            <li>
+                <a href="#">
+                    <i class="bx bx-certification" id="certificados1"></i>
+                    <span class="nav-item" id="certificados2">Certificados</span>
+                </a>
+                
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-show-alt' id="verClinicHistoryMenu1"></i>
+                    <span class="nav-item" id="verClinicHistoryMenu2">Ver</span><span class="nav-item" id="verClinicHistoryMenu3">&nbsphistorias</span>
+                    <span class="nav-item" id="verClinicHistoryMenu4">&nbspclínicas</span>
+                </a>
+                
+            </li>
+            <li>
+                <a href="#">
+                    <i class="bx bxs-capsule" id="manejoRips1"></i>
+                    <span class="nav-item" id="manejoRips2">Manejo</span><span class="nav-item" id="manejoRips3">&nbspde</span><span
+                        class="nav-item" id="manejoRips4">&nbspRIPS</span>
+                </a>
+                
+            </li>
+            <li>
+                <a href="#">
+                    <i class="bx bx-line-chart"></i>
+                    <span class="nav-item">Estadísticas</span>
+                </a>
+                
+            </li>
+            <li>
+                <a href="#">
+                    <i class="bx bx-log-out" id="logout1"></i>
+                    <span class="nav-item" id="logout2">Cerrar</span><span class="nav-item" id="logout3">&nbspsesión</span>
+                </a>
+                
+            </li>
+        </ul>
+    </div>
+
+    <header class="header">
+        <div class="logo">
+            <img src="/assets/image/Digi-Optic.jpeg">
+        </div>
+    </header>
+
+    <div class="main-content">
+        <div class="container">
+            <div class="box" id="agenda">
+                <h2>Manejo&nbspde&nbspla&nbspagenda</h2>
+                <img src="/assets/image/agenda.png">
+            </div>
+            <div class="box" id="clinicHistory">
+                <h2>Historia&nbspclínica</h2>
+                <img src="/assets/image/historia-clinica.png">
+            </div>
+            <div class="box" id="certificados">
+                <h2>Certificados</h2>
+                <img src="/assets/image/certificado.png">
+            </div>
+            <div class="box" id="verClinicHistory">
+                <h2>Ver&nbsphistorias&nbspclínicas</h2>
+                <img src="/assets/image/historia-clinica 2.png">
+            </div>
+            <div class="box" id="manejoRips">
+                <h2>Manejo&nbspde&nbspRIPS</h2>
+                <img src="/assets/image/rips.png">
+            </div>
+            <div class="box">
+                <h2>Estadísticas</h2>
+                <img src="/assets/image/estadisticas.png">
+            </div>
+        </div>
+    </div>
+
+    <script src="/controller/home/homeTeacher.js" type="module"></script>
+</body>
+
+</html>

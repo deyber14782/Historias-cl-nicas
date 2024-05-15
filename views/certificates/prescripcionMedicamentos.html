@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/certificates/prescripcionMedicamentos.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>PRESCRIPCIÓN DE MEDICAMENTOS DE USO OFTÁLMICO</title>
+</head>
+
+<body>
+    <div class="container" id="container">
+        <table>
+            <tr>
+                <td colspan="2"><img src="/assets/image/Logo_de_la_Universidad_Antonio_Nariño.svg.png">
+                </td>
+                <td colspan="3">Código: DM.FT.PM.UO. V003</td>
+            </tr>
+            <tr>
+                <td colspan="3">Revisado por: Johanna Garzón</td>
+                <td id="fechaHoy"></td>
+            </tr>
+            <tr>
+                <td colspan="2">FACULTAD DE OPTOMETRÍA</td>
+                <td>Elaborado por</td>
+                <td>Aprobado por: Johanna Garzón</td>
+            </tr>
+            <tr>
+                <td colspan="3">Prescripción de Medicamentos de Uso Oftálmico</td>
+                <td id="fechaHoy2"></td>
+            </tr>
+        </table>
+
+        <div class="box1">
+            <div>
+                <label>Nombre: </label>
+                <input readonly id="nombre" style="width: 80%;">
+            </div>
+            <div>
+                <label>Tipo de Documento: </label>
+                <input readonly id="tipoDocumento" style="width: 12%;">
+            </div>
+            <div>
+                <label>Número de Documento: </label>
+                <input readonly id="numeroDocumento">
+            </div>
+        </div>
+
+        <div class="box2">
+            <div>
+                <label>Fecha elaboración: </label>
+                <input readonly style="width: 40%;" id="fecha">
+            </div>
+            <div>
+                <label>Lugar: </label>
+                <input readonly value="UAN - Sede Bogotá">
+            </div>
+            <div>
+                <label>EPS: </label>
+                <input readonly id="eps">
+            </div>
+            <div>
+                <label>Afiliación: </label>
+                <input readonly id="afiliacion">
+            </div>
+        </div>
+
+        <div class="box3">
+            <table>
+                <tr>
+                    <td>DCI (Denominación común internacional) </td>
+                    <td>Concentración</td>
+                    <td>Forma farmaceútica</td>
+                    <td>Cantidad</td>
+                </tr>
+                <tr>
+                    <td id="dci0"></td>
+                    <td id="concentracion0"></td>
+                    <td id="formaFarmaceutica0"></td>
+                    <td id="cantidad0"></td>
+                </tr>
+                <tr>
+                    <td id="dci1"></td>
+                    <td id="concentracion1"></td>
+                    <td id="formaFarmaceutica1"></td>
+                    <td id="cantidad1"></td>
+                </tr>
+                <tr>
+                    <td id="dci2"></td>
+                    <td id="concentracion2"></td>
+                    <td id="formaFarmaceutica2"></td>
+                    <td id="cantidad2"></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="box4">
+            <div class="box4_sub1">
+                <label>DX:</label>
+                <input style="width: 60%;" id="dx">
+            </div>
+            <div class="box4_sub1">
+                <label>Recomendaciones de uso: </label><br><br>
+                <label>1.</label>
+                <input style="width: 60%;" id="recomendaciones"><br><br>
+            </div>
+            <div class="box4_sub1"> 
+                <label>Próximo Control: </label>
+                <input readonly style="width: 30%;" id="proximoControl">
+            </div>
+        </div>
+
+        <div class="box5">
+            <div>
+                <hr>
+                <label>Firma y sello del docente</label>
+            </div>
+
+        </div>
+
+    </div>
+    <button class="imprimir" id="imprimir">Imprimir</button>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+        integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/controller/certificates/prescripcionMedicamentos.js" type="module"></script>
+</body>
+
+</html>

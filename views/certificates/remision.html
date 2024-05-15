@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/certificates/remision.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>REMISIÓN</title>
+</head>
+
+<body>
+    <div class="container" id="container">
+        <table>
+            <tr>
+                <td colspan="2"><img src="/assets/image/Logo_de_la_Universidad_Antonio_Nariño.svg.png">
+                </td>
+                <td colspan="3">Código: DM.FT.PM.UO. V003</td>
+            </tr>
+            <tr>
+                <td colspan="3">Revisado por: Johanna Garzón</td>
+                <td id="fechaHoy"></td>
+            </tr>
+            <tr>
+                <td colspan="2">FACULTAD DE OPTOMETRÍA</td>
+                <td>Elaborado por</td>
+                <td>Aprobado por: Johanna Garzón</td>
+            </tr>
+            <tr>
+                <td colspan="3">Remisión</td>
+                <td id="fechaHoy2"></td>
+            </tr>
+        </table>
+
+        <div class="box1">
+            <div>
+                <label>Nombre: </label>
+                <input readonly id="nombre" style="width: 80%;">
+            </div>
+            <div>
+                <label>Tipo de Documento: </label>
+                <input readonly id="tipoDocumento" style="width: 12%;">
+            </div>
+            <div>
+                <label>Número de Documento: </label>
+                <input readonly id="numeroDocumento">
+            </div>
+        </div>
+
+        <div class="box2">
+            <div>
+                <label>Fecha elaboración: </label>
+                <input readonly style="width: 40%;" id="fecha">
+            </div>
+            <div>
+                <label>Lugar: </label>
+                <input readonly value="UAN - Sede Bogotá">
+            </div>
+            <div>
+                <label>EPS: </label>
+                <input readonly id="eps">
+            </div>
+            <div>
+                <label>Afiliación: </label>
+                <input readonly id="afiliacion">
+            </div>
+        </div>
+
+        <div class="box4">
+            <div>
+                <label>SS/</label>
+                <textarea id="remision" readonly></textarea>
+            </div>
+        </div>
+
+        <div class="box5">
+            <div>
+                <hr>
+                <label>Firma y sello del docente</label>
+            </div>
+
+        </div>
+
+    </div>
+    <button class="imprimir" id="imprimir">Imprimir</button>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+    integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/controller/certificates/remision.js" type="module"></script>
+
+</body>
+
+</html>

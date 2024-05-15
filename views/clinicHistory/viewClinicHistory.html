@@ -1,0 +1,2034 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historia clínica de refracción</title>
+    <link rel="stylesheet" href=/styles/clinicHistory/clinicHistory.css>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+    <aside id="sidebar">
+        <ul>
+            <li>
+                <img src="/assets/image/Digi-Optic.jpeg" class="logo">
+            </li>
+            <li>
+                <a href="" id="exit">Volver al menú principal</a>
+            </li>
+            <li>
+                <a href="#datosPersonales">Datos personales</a>
+            </li>
+            <li>
+                <a href="#anamnesis">Anamnesis</a>
+            </li>
+            <li>
+                <a href="#lensometria">Lensometría</a>
+            </li>
+            <li>
+                <a href="#agudezaVisual">Agudeza Visual</a>
+            </li>
+            <li>
+                <a href="#examenExterno">Examen externo</a>
+            </li>
+            <li>
+                <a href="#biomicroscopia">Biomicroscopia</a>
+            </li>
+            <li>
+                <a href="#motilidadOcular">Motilidad ocular</a>
+            </li>
+            <li>
+                <a href="#reflejosPupilares">Reflejos Pupilares</a>
+            </li>
+            <li>
+                <a href="#medidaDesviacionHabitual">Medida de la desviación habitual</a>
+            </li>
+            <li>
+                <a href="#oftalmoscopia">Oftalmoscopia</a>
+            </li>
+            <li>
+                <a href="#queratometria">Queratometria</a>
+            </li>
+            <li>
+                <a href="#retinoscopiaEstatica">Retinoscopia estática</a>
+            </li>
+            <li>
+                <a href="#retinoscopiaDinamica">Retinoscopia dinámica</a>
+            </li>
+            <li>
+                <a href="#retinoscopiaCiclopejia">Retinoscopia ciclopejia</a>
+            </li>
+
+            <li>
+                <a href="#examenSubjetivo">Examen subjetivo</a>
+            </li>
+
+            <li>
+                <a href="#observaciones">Observaciones</a>
+            </li>
+
+            <li>
+                <a href="#afinacionVLyVP">Afinación VL y VP</a>
+            </li>
+
+            <li>
+                <a href="#medidaDesviacionInducida">Medida de la desviación inducida</a>
+            </li>
+
+            <li>
+                <a href="#flexibilidadAcomodacionMonocular">Flexibilidad de acomodación monocular </a>
+            </li>
+
+            <li>
+                <a href="#estereopsis">Estereopsis</a>
+            </li>
+
+            <li>
+                <a href="#visionCromatica">Visión Cromática</a>
+            </li>
+
+            <li>
+                <a href="#prescripcionOptica">Prescripcion óptica</a>
+            </li>
+
+            <li>
+                <a href="#dnp">DNP</a>
+            </li>
+
+            <li>
+                <a href="#prescripcionMedicamentosa">Prescripcion Medicamentosa</a>
+            </li>
+
+            <li>
+                <a href="#recomendaciones">Recomendaciones de uso</a>
+            </li>
+
+            <li>
+                <a href="#conducta">Conducta</a>
+            </li>
+
+            <li>
+                <a href="#remisiones">Remisiones</a>
+            </li>
+
+        </ul>
+    </aside>
+    <header>
+        <h1 class="title">HISTORIA CLÍNICA DE REFRACCIÓN</h1>
+    </header>
+    <section class="main">
+
+
+        <div class="container">
+            <h2 id="datosPersonales">DATOS PERSONALES</h2>
+            <div class="form1">
+                <div class="box1">
+                    <div>
+                        <label>Fecha:</label>
+                        <input type="date" id="fecha" readonly>
+                    </div>
+                    <div>
+                        <label>No. H.C.</label>
+                        <input type="text" id="no_h_c" readonly>
+                    </div>
+                    <div>
+                        <label>Hora Entrada:</label>
+                        <input type="time" id="horaEntrada" readonly>
+                    </div>
+                </div>
+                <div class="box2">
+                    <div>
+                        <label>Identificación:</label>
+                        <label>Tipo</label>
+                        <select id="identificacion" disabled>
+                            <option value="0">Seleccione una opción</option>
+                            <option value="C.C">C.C</option>
+                            <option value="T.I">T.I</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label>Número</label>
+                        <input type="number" id="numero" readonly>
+                    </div>
+                    <div>
+                        <label>Edad</label>
+                        <input type="number" id="edad" readonly>
+                    </div>
+                </div>
+                <div class="box3">
+                    <div>
+                        <label>Apellidos</label>
+                        <input type="text" id="apellidos" readonly>
+                    </div>
+                    <div>
+                        <label>Nombres</label>
+                        <input type="text" id="nombres" readonly>
+                    </div>
+                </div>
+                <div class="box4">
+                    <div>
+                        <label>Género</label>
+                        <select id="genero" disabled>
+                            <option value="0">Seleccione una opción</option>
+                            <option value="Masculino">Masculino</option>
+                            <option value="Femenino">Femenino</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label>Fecha de nacimiento</label>
+                        <input type="date" id="fechaNacimiento" readonly>
+                    </div>
+                </div>
+                <div class="box5">
+                    <div>
+                        <label>Procedencia</label>
+                        <input type="text" id="procedencia" readonly>
+                    </div>
+                    <div>
+                        <label>Ocupación</label>
+                        <input type="text" id="ocupacion" readonly>
+                    </div>
+                </div>
+                <div class="box6">
+                    <div>
+                        <label>Dirección de residencia</label>
+                        <input type="text" id="direccionResidencia" readonly>
+                    </div>
+                    <div>
+                        <label>Barrio</label>
+                        <input type="text" id="barrio" readonly>
+                    </div>
+                    <div>
+                        <label>Teléfono</label>
+                        <input type="tel" id="telefono" readonly>
+                    </div>
+                </div>
+                <div class="box7">
+                    <div>
+                        <label>Localidad</label>
+                        <input type="text" id="localidad" readonly>
+                    </div>
+                    <div>
+                        <label>Código</label>
+                        <input type="number" id="codigo" readonly>
+                    </div>
+                    <div>
+                        <label>Procedencia:</label>
+                        <select id="procedencia2" disabled>
+                            <option value="0">Seleccione una opción</option>
+                            <option value="Urbano">Urbano</option>
+                            <option value="Rural">Rural</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="box8">
+                    <div>
+                        <label>Remitido por</label>
+                        <input type="text" id="remitidoPor" readonly>
+                    </div>
+                    <div>
+                        <label>Tipo vinculación</label>
+                        <select id="tipoVinculacion" disabled>
+                            <option value="0">Seleccione una opción</option>
+                            <option value="RC">RC</option>
+                            <option value="RS">RS</option>
+                            <option value="V">V</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="box9">
+                    <div>
+                        <label>Responsable</label>
+                        <input type="text" id="responsable" readonly>
+                    </div>
+                    <div>
+                        <label>Parentesco</label>
+                        <input type="text" id="parentesco" readonly>
+                    </div>
+                    <div>
+                        <label>Celular</label>
+                        <input type="tel" id="celular" readonly>
+                    </div>
+                </div>
+                <div class="box10">
+                    <div>
+                        <label>Acompañante</label>
+                        <input type="text" id="acompañante" readonly>
+                    </div>
+                    <div>
+                        <label>Parentesco</label>
+                        <input type="text" id="parentesco2" readonly>
+                    </div>
+                </div>
+                <div class="box11">
+                    <div>
+                        <label>Dirección de residencia</label>
+                        <input type="text" id="direccionResidencia2" readonly>
+                    </div>
+                    <div>
+                        <label>Barrio</label>
+                        <input type="text" id="barrio2" readonly>
+                    </div>
+                    <div>
+                        <label>Teléfono</label>
+                        <input type="tel" id="telefono2" readonly>
+                    </div>
+                </div>
+                <div class="box11_1">
+                    <div>
+                        <label>EPS</label>
+                        <input type="text" id="eps" style="width: 50%;" readonly>
+                    </div>
+                    <div>
+                        <label>Tipo afiliación</label>
+                        <input type="text" id="tipoAfiliacion" style="width: 60%;" readonly>
+                    </div>
+                </div>
+            </div>
+
+
+            <h2 id="anamnesis">ANAMNESIS</h2>
+            <div class="form2">
+                <div class="box12">
+                    <div>
+                        <label>Motivo de consulta: </label>
+                        <textarea id="motivoConsulta" readonly></textarea>
+
+                    </div>
+                </div>
+                <div class="box13">
+                    <div>
+                        <label>Anamnesis: </label>
+                        <textarea id="anamnesisDB" readonly></textarea>
+
+                    </div>
+                </div>
+                <div class="box14">
+                    <div>
+                        <label>Antecedentes personales sitémicos: </label>
+                        <select id="antecedentesPersonalesSistemicos" disabled>
+                            <option value=0>Selecciona una opción</option>
+                            <option value="Asma">Asma</option>
+                            <option value="Hipertensión">Hipertensión</option>
+                            <option value="Hipoglucemia">Hipoglucemia</option>
+                            <option value="Diabetes">Diabetes</option>
+                            <option value="Tiroides">Tiroides</option>
+                            <option value="Otro">Otro...</option>
+                        </select>
+                        <input type="text" style="width: 35%; margin-left: 3%;" id="otro1">
+                    </div>
+                </div>
+                <div class="box15">
+                    <div>
+                        <label>Antecedentes personales oculares: </label>
+                        <select id="antecedentesPersonalesOculares" disabled>
+                            <option value=0>Selecciona una opción</option>
+                            <option value="Astigmatismo">Astigmatismo</option>
+                            <option value="Miopia">Miopía</option>
+                            <option value="Hipermetropia">Hipermetropia</option>
+                            <option value="Usuario_de_gafas">Usuario de gafas</option>
+                            <option value="Calorola">Calorola</option>
+                            <option value="Glucoma">Glucoma</option>
+                            <option value="DEAM">DEAM</option>
+                            <option value="Otro">Otro...</option>
+                        </select>
+                        <input type="text" style="width: 35%; margin-left: 3.7%;" id="otro2">
+                    </div>
+                </div>
+                <div class="box16">
+                    <div>
+                        <label>Antecedentes familiares: </label>
+                        <textarea id="antecedentesFamiliares" readonly></textarea>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <h2 id="lensometria">LENSOMETRÍA</h2>
+            <div class="form3">
+                <table>
+                    <tr>
+                        <td style="visibility:collapse;"></td>
+                        <td colspan="3">VISION LEJANA</td>
+                        <td colspan="3">VISIÓN PRÓXIMA</td>
+                        <td rowspan="1">MATERIALES</td>
+                    </tr>
+                    <tr>
+                        <td style="visibility:collapse;"></td>
+                        <td>ESFERA</td>
+                        <td>CILINDRO</td>
+                        <td>EJE</td>
+                        <td>ESFERA</td>
+                        <td>CILINDRO</td>
+                        <td>EJE</td>
+                        <td>
+                            <select placeholder="TIPO DE LENTE" id="tipoLente" disabled>
+                                <option value="0">Seleccione una opción</option>
+                                <option value="Progresivo">Progresivo</option>
+                                <option value="Bifocal">Bifocal</option>
+                                <option value="Monofocal">Monofocal</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>O.D.</td>
+                        <td><input id="visionLejanaEsferaOD" readonly></td>
+                        <td><input id="visionLejanaCilindroOD" readonly></td>
+                        <td><input id="visionLejanaEjeOD" readonly></td>
+                        <td><input id="visionProximaEsferaOD" readonly></td>
+                        <td><input id="visionProximaCilindroOD" readonly></td>
+                        <td><input id="visionProximaEjeOD" readonly></td>
+                        <td><input placeholder="FILTRO" id="filtro" readonly></td>
+                    </tr>
+                    <tr>
+                        <td>O.I.</td>
+                        <td><input id="visionLejanaEsferaOI" readonly></td>
+                        <td><input id="visionLejanaCilindroOI" readonly></td>
+                        <td><input id="visionLejanaEjeOI" readonly></td>
+                        <td><input id="visionProximaEsferaOI" readonly></td>
+                        <td><input id="visionProximaCilindroOI" readonly></td>
+                        <td><input id="visionProximaEjeOI" readonly></td>
+                        <td><input placeholder="DOS PARES" id="dosPares" readonly></td>
+                    </tr>
+                    <tr>
+                        <td>ADD</td>
+                        <td><input id="visionLejanaEsferaADD" readonly></td>
+                        <td><input id="visionLejanaCilindroADD" readonly></td>
+                        <td><input id="visionLejanaEjeADD" readonly></td>
+                        <td><input id="visionProximaEsferaADD" readonly></td>
+                        <td><input id="visionProximaCilindroADD" readonly></td>
+                        <td><input id="visionProximaEjeADD" readonly></td>
+                        <td><input placeholder="OBSERVACIONES" id="observaciones" readonly></td>
+                    </tr>
+                </table>
+            </div>
+
+
+            <h2 id="agudezaVisual">AGUDEZA VISUAL</h2>
+            <div class="form4">
+                <div class="box17">
+                    <div>
+                        <label>Cartilla utilizada</label>
+                        <select id="cartillaUtilizada" disabled>
+                            <option value=0>Seleccione una opción</option>
+                            <option value="Log_Mar">LogMar</option>
+                            <option value="Esnellen">Esnellen</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label>Distancia</label>
+                        <select id="distancia" disabled>
+                            <option value=0>Seleccione una opción</option>
+                            <option value="2_metros">2 metros</option>
+                            <option value="3_metros">3 metros</option>
+                            <option value="4_metros">4 metros</option>
+                            <option value="6_metros">6 metros</option>
+                        </select>
+                    </div>
+                </div>
+
+                <table>
+                    <tr>
+                        <td style="visibility:collapse;"></td>
+                        <td colspan="2">VISION LEJANA</td>
+                        <td colspan="2">VISIÓN ESTENOPEICO</td>
+                        <td colspan="2">VISIÓN CERCANA</td>
+                    </tr>
+                    <tr>
+                        <td style="visibility:collapse;"></td>
+                        <td>Sin correción</td>
+                        <td>Con corección</td>
+                        <td>Sin correción</td>
+                        <td>Con corección</td>
+                        <td>Sin correción</td>
+                        <td>Con corección</td>
+                    </tr>
+                    <tr>
+                        <td>O.D.</td>
+                        <td><input id="visionLejanaSinCorreccionOD" readonly></td>
+                        <td><input id="visionLejanaConCorreccionOD" readonly></td>
+                        <td><input id="visionEstenopeicoSinCorreccionOD" readonly></td>
+                        <td><input id="visionEstenopeicoConCorreccionOD" readonly></td>
+                        <td><input id="visionCercanaSinCorreccionOD" readonly></td>
+                        <td><input id="visionCercanaConCorreccionOD" readonly></td>
+                    </tr>
+                    <tr>
+                        <td>O.I.</td>
+                        <td><input id="visionLejanaSinCorreccionOI" readonly></td>
+                        <td><input id="visionLejanaConCorreccionOI" readonly></td>
+                        <td><input id="visionEstenopeicoSinCorreccionOI" readonly></td>
+                        <td><input id="visionEstenopeicoConCorreccionOI" readonly></td>
+                        <td><input id="visionCercanaSinCorreccionOI" readonly></td>
+                        <td><input id="visionCercanaConCorreccionOI" readonly></td>
+                    </tr>
+                    <tr>
+                        <td>A.O.</td>
+                        <td><input id="visionLejanaSinCorreccionAO" readonly></td>
+                        <td><input id="visionLejanaConCorreccionAO" readonly></td>
+                        <td><input id="visionEstenopeicoSinCorreccionAO" readonly></td>
+                        <td><input id="visionEstenopeicoConCorreccionAO" readonly></td>
+                        <td><input id="visionCercanaSinCorreccionAO" readonly></td>
+                        <td><input id="visionCercanaConCorreccionAO" readonly></td>
+                    </tr>
+                </table>
+
+                <div class="box18">
+                    <div>
+                        <label>Distancia pupilar</label>
+                        <input type="number" id="distanciaPupilar" readonly>
+                    </div>
+                    <div>
+                        <label>Distancia NP derecha</label>
+                        <input type="number" id="distanciaNPDerecha" readonly>
+                    </div>
+                    <div>
+                        <label>Distancia NP izquierda</label>
+                        <input type="number" id="distanciaNPIzquierda" readonly>
+                    </div>
+                    <div>
+                        <label>Ojo dominante</label>
+                        <select id="ojoDominante" disabled>
+                            <option value=0>Seleccione una opción</option>
+                            <option value="OI">O.I</option>
+                            <option value="OD">O.D</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="examenExternoBiomicroscopia">
+                <h2 id="examenExterno">EXAMEN EXTERNO</h2>
+                <h2 id="biomicroscopia">BIOMICROSCOPIA</h2>
+                <div class="form5">
+                    <div class="box19">
+                        <div class="box_sub_19_1">
+                            <label>O.D.</label>
+                            <textarea id="examenExternoOD" readonly></textarea>
+                        </div>
+                        <div class="box_sub_19_2">
+                            <label>O.I.</label>
+                            <textarea id="examenExternoOI" readonly></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form6">
+                    <div class="box20">
+                        <div class="box_sub_20_1">
+                            <h3>O.D.</h3>
+                            <label>Descripción</label>
+                            <textarea id="descripcionBiomicroscopiaOD" readonly></textarea>
+                        </div>
+                        <div class="box_sub_20_2">
+                            <h3>O.I.</h3>
+                            <label>Descripción</label>
+                            <textarea id="descripcionBiomicroscopiaOI" readonly></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="motilidadReflejosDesviacion">
+                <div>
+                    <h2 id="motilidadOcular">MOTILIDAD OCULAR</h2>
+                    <div class="form7">
+                        <div class="box21">
+                            <div>
+                                <label>Hirchberg</label>
+                                <input type="text" id="hirchberg" readonly>
+                            </div>
+                            <div>
+                                <label>Kappa O.D.</label>
+                                <input type="text" id="kappaOD" readonly>
+                            </div>
+                            <div>
+                                <label>Kappa O.I.</label>
+                                <input type="text" id="kappaOI" readonly>
+                            </div>
+                        </div>
+                        <div class="box22">
+                            <div class="box_sub_22_1">
+                                <label>Ducciones</label>
+                                <label>O.D.</label>
+                                <input type="text" id="duccionesOD" readonly>
+                                <label>O.I.</label>
+                                <input type="text" id="duccionesOI" readonly>
+                            </div>
+                            <div class="box_sub_22_2">
+                                <label>Versiones</label>
+                                <textarea id="versiones" readonly></textarea>
+                            </div>
+                        </div>
+                        <div class="box23">
+                            <div>
+                                <label>P.P.C Objeto Real</label>
+                                <input type="text" id="ppcObjetoReal" readonly>
+                            </div>
+                            <div>
+                                <label>LUZ</label>
+                                <input type="text" id="luz" readonly>
+                            </div>
+                            <div>
+                                <label>LUZ + Filtro Rojo</label>
+                                <input type="text" id="luzFiltroRojo" readonly>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h2 id="reflejosPupilares">REFLEJOS PUPILARES</h2>
+                    <div class="form8">
+                        <div class="box24">
+                            <div>
+                                <select id="reflejosPupilaresDB" disabled>
+                                    <option value=0>Seleccione una opción</option>
+                                    <option value="Fotomotor">Fotomotor</option>
+                                    <option value="Consensual">Consensual</option>
+                                    <option value="Acomodativo">Acomodativo</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h2 id="medidaDesviacionHabitual">DESVIACIÓN HABITUAL</h2>
+                    <div class="form9">
+                        <div class="box25">
+                            <div class="box25_sub1">
+                                <label>Tipo de test: Cover Test VL</label><br><br>
+                                <label>6m</label>
+                                <input type="text" id="tipoDeTestCoverTestVL6m" readonly><br><br>
+                            </div>
+                            <div class="box25_sub2">
+                                <label>VP (Habitual)</label>
+                                <input type="text" id="vpHabitual" readonly>
+                                <label>cm</label>
+                                <input type="text" id="desviacionCM" readonly>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="oftalmoscopiaQueratometria">
+                <h2 id="oftalmoscopia">OFTALMOSCOPIA</h2>
+                <h2 id="queratometria">QUERATOMETRÍA</h2>
+
+                <div class="form10">
+                    <div class="box26">
+                        <div>
+                            <label>Tipo: </label>
+                            <select type="text" id="directa" disabled>
+                                <option value="0">Seleccione una opción</option>
+                                <option value="Directa">Directa</option>
+                                <option value="Indirecta">Indirecta</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label>Indirecta. Técnica: </label>
+                            <input type="text" id="indirectaTecnica" readonly>
+                        </div>
+                    </div>
+                    <div class="box27">
+                        <div class="box_sub_27_1">
+                            <label>Rel. A/V</label>
+                            <input type="text" id="relAV" readonly>
+                            <label>Exc/Disco</label>
+                            <input type="text" id="excDisco" readonly>
+                            <label>Mácula</label>
+                            <input type="text" id="macula" readonly>
+                            <label>Fijación</label>
+                            <input type="text" id="fijacion" readonly>
+                        </div>
+                        <div class="box_sub_27_2">
+                            <label>Rel. A/V</label>
+                            <input type="text" id="relAV2" readonly>
+                            <label>Exc/Disco</label>
+                            <input type="text" id="excDisco2" readonly>
+                            <label>Mácula</label>
+                            <input type="text" id="macula2" readonly>
+                            <label>Fijación</label>
+                            <input type="text" id="fijacion2" readonly>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form11">
+                    <div class="box28">
+                        <div>
+                            <label>O.D.</label>
+                            <input type="text" id="queratometriaOD" readonly>
+                            <label>Astigmatismo Corneal</label>
+                            <input type="text" id="queratometriaAstigmatismoCornealOD" readonly>
+                            <label>Miras</label>
+                            <input type="text" id="queratometriaMirasOD" readonly>
+                        </div>
+                        <div>
+                            <label>O.I.&nbsp</label>
+                            <input type="text" id="queratometriaOI" readonly>
+                            <label>Astigmatismo Corneal</label>
+                            <input type="text" id="queratometriaAstigmatismoCornealOI" readonly>
+                            <label>Miras</label>
+                            <input type="text" id="queratometriaMirasOI" readonly>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="estaticaDinamica">
+                <h2 id="retinoscopiaEstatica">RETINOSCOPIA ESTÁTICA</h2>
+                <h2 id="retinoscopiaDinamica">RETINOSCOPIA DINÁMICA</h2>
+
+                <div class="form12">
+                    <table>
+                        <tr>
+                            <td style="visibility:collapse;"></td>
+                            <td>Esfera</td>
+                            <td>Cilindro</td>
+                            <td>Eje</td>
+                            <td>Adición</td>
+                        </tr>
+                        <tr>
+                            <td>OD</td>
+                            <td><input id="estaticaEsferaOD" readonly></td>
+                            <td><input id="estaticaCilindroOD" readonly></td>
+                            <td><input id="estaticaEjeOD" readonly></td>
+                            <td><input id="estaticaAdicionOD" readonly></td>
+                        </tr>
+                        <tr>
+                            <td>OI</td>
+                            <td><input id="estaticaEsferaOI" readonly></td>
+                            <td><input id="estaticaCilindroOI" readonly></td>
+                            <td><input id="estaticaEjeOI" readonly></td>
+                            <td><input id="estaticaAdicionOI" readonly></td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="form13">
+                    <table>
+                        <tr>
+                            <td style="visibility:collapse;"></td>
+                            <td>Esfera</td>
+                            <td>Cilindro</td>
+                            <td>Eje</td>
+                            <td>Adición</td>
+                        </tr>
+                        <tr>
+                            <td>OD</td>
+                            <td><input id="dinamicaEsferaOD" readonly></td>
+                            <td><input id="dinamicaCilindroOD" readonly></td>
+                            <td><input id="dinamicaEjeOD" readonly></td>
+                            <td><input id="dinamicaAdicionOD" readonly></td>
+                        </tr>
+                        <tr>
+                            <td>OI</td>
+                            <td><input id="dinamicaEsferaOI" readonly></td>
+                            <td><input id="dinamicaCilindroOI" readonly></td>
+                            <td><input id="dinamicaEjeOI" readonly></td>
+                            <td><input id="dinamicaAdicionOI" readonly></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="ciclopejiaExamen">
+                <h2 id="retinoscopiaCiclopejia">RETINOSCOPIA CICLOPLEJIA</h2>
+                <h2 id="examenSubjetivo">EXAMEN SUBJETIVO</h2>
+                <div class="form14">
+                    <table>
+                        <tr>
+                            <td style="visibility:collapse;"></td>
+                            <td>Esfera</td>
+                            <td>Cilindro</td>
+                            <td>Eje</td>
+                            <td>Adición</td>
+                        </tr>
+                        <tr>
+                            <td>OD</td>
+                            <td><input id="ciclopejiaEsferaOD" readonly></td>
+                            <td><input id="ciclopejiaCilindroOD" readonly></td>
+                            <td><input id="ciclopejiaEjeOD" readonly></td>
+                            <td><input id="ciclopejiaAdicionOD" readonly></td>
+                        </tr>
+                        <tr>
+                            <td>OI</td>
+                            <td><input id="ciclopejiaEsferaOI" readonly></td>
+                            <td><input id="ciclopejiaCilindroOI" readonly></td>
+                            <td><input id="ciclopejiaEjeOI" readonly></td>
+                            <td><input id="ciclopejiaAdicionOI" readonly></td>
+                        </tr>
+                    </table>
+                    <div class="box31">
+                        <div>
+                            <label>Tipo de medicamento</label>
+                            <input type="text" id="tipoMedicamento">
+                            <label>Dosis</label>
+                            <input type="text" id="dosis">
+                        </div>
+                    </div>
+                </div>
+                <div class="form15">
+                    <table>
+                        <tr>
+                            <td style="visibility:collapse;"></td>
+                            <td>Esfera</td>
+                            <td>Cilindro</td>
+                            <td>Eje</td>
+                            <td>Adición</td>
+                        </tr>
+                        <tr>
+                            <td>OD</td>
+                            <td><input id="examenEsferaOD" readonly></td>
+                            <td><input id="examenCilindroOD" readonly></td>
+                            <td><input id="examenEjeOD" readonly></td>
+                            <td><input id="examenAdicionOD" readonly></td>
+                        </tr>
+                        <tr>
+                            <td>OI</td>
+                            <td><input id="examenEsferaOI" readonly></td>
+                            <td><input id="examenCilindroOI" readonly></td>
+                            <td><input id="examenEjeOI" readonly></td>
+                            <td><input id="examenAdicionOI" readonly></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="observacionesAfinacion">
+                <h2 id="observaciones">OBSERVACIONES</h2>
+                <h2 id="afinacionVLyVP">AFINACIÓN VL y Y VP</h2>
+                <div class="form16">
+                    <div>
+                        <div>
+                            <textarea id="observacionesDB" readonly></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form17">
+                    <div class="box33">
+                        <div>
+                            <label>Técnica VL</label>
+                            <input type="text" id="tecnicaVL" readonly>
+                            <label>VP</label>
+                            <input type="text" id="vp" readonly>
+                        </div>
+                        <table>
+                            <tr>
+                                <td style="visibility:collapse;"></td>
+                                <td>Esfera</td>
+                                <td>Cilindro</td>
+                                <td>Eje</td>
+                                <td>Adición</td>
+                            </tr>
+                            <tr>
+                                <td>OD</td>
+                                <td><input id="afinacionEsferaOD" readonly></td>
+                                <td><input id="afinacionCilindroOD" readonly></td>
+                                <td><input id="afinacionEjeOD" readonly></td>
+                                <td><input id="afinacionAdicionOD" readonly></td>
+                            </tr>
+                            <tr>
+                                <td>OI</td>
+                                <td><input id="afinacionEsferaOI" readonly></td>
+                                <td><input id="afinacionCilindroOI" readonly></td>
+                                <td><input id="afinacionEjeOI" readonly></td>
+                                <td><input id="afinacionAdicionOI" readonly></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="afinacionMedidad">
+                <h2 id="medidaDesviacionInducida">DESVIACIÓN INDUCIDA</h2>
+                <h2 id="flexibilidadAcomodacionMonocular">ACOMODACIÓN MONOCULAR</h2>
+                <div class="form19">
+                    <div class="box35">
+                        <div>
+                            <label>Tipo de test:</label>
+                            <select id="tipoTest" disabled>
+                                <option value=0>Seleccione una opción</option>
+                                <option value="Cover_Test">Cover Test</option>
+                                <option value="Von_Graefe">Von Graefe</option>
+                                <option value="Maddox">Maddox</option>
+                                <option value="Krimsky">Krimsky</option>
+                                <option value="White">White</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label>6m.</label>
+                            <input type="text" id="mDesviacionInducida" readonly>
+                            <label>vp</label>
+                            <input type="text" id="vpDesviacionInducida" readonly>
+                            <label>cm</label>
+                            <input type="text" id="cmDesviacionInducida" readonly>
+                        </div>
+                    </div>
+                </div>
+                <div class="form20">
+                    <div class="box36">
+                        <div>
+                            <label>OD</label>
+                            <label>+</label>
+                            <input type="number" id="masOD" readonly>
+                            <label>-</label>
+                            <input type="number" id="menosOD" readonly>
+                            <label>c.p.m</label>
+                            <input type="text" id="cpmOD" readonly>
+                            <label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspOI</label>
+                            <label>+</label>
+                            <input type="number" id="masOI" readonly>
+                            <label>-</label>
+                            <input type="number" id="menosOI" readonly>
+                            <label>c.p.m</label>
+                            <input type="text" id="cpmOI" readonly>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="flexiblidadEstereopsis">
+                <h2 id="estereopsis">ESTEREOPSIS</h2>
+                <h2 id="visionCromatica">VISIÓN CROMÁTICA</h2>
+                <div class="form21">
+                    <div class="box37">
+                        <div>
+                            <label>Test</label>
+                            <input type="text" id="estereopsisInput1" readonly>
+                            <input type="text" id="estereopsisInput2" readonly>
+                        </div>
+                    </div>
+                </div>
+                <div class="form22">
+                    <div class="box38">
+                        <div>
+                            <label>Test</label>
+                            <input type="text" id="testVisionCromatica" readonly>
+                            <label>O.D.</label>
+                            <input type="text" id="visionCromaticaOD" readonly>
+                            <label>O.I.</label>
+                            <input type="text" id="visionCromaticaOI" readonly>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h2 id="prescripcionOptica">PRESCRIPCIÓN ÓPTICA</h2>
+            <div class="form23">
+                <table>
+                    <tr>
+                        <td>RX</td>
+                        <td>ESFERA</td>
+                        <td>CILINDRO</td>
+                        <td>EJE</td>
+                        <td>AV</td>
+                        <td>Add</td>
+                    </tr>
+                    <tr>
+                        <td>OD</td>
+                        <td><input id="esferaOD" readonly></td>
+                        <td><input id="cilindroOD" readonly></td>
+                        <td><input id="ejeOD" readonly></td>
+                        <td><input id="avOD" readonly></td>
+                        <td><input id="addOD" readonly></td>
+                    </tr>
+                    <tr>
+                        <td>OI</td>
+                        <td><input id="esferaOI" readonly></td>
+                        <td><input id="cilindroOI" readonly></td>
+                        <td><input id="ejeOI" readonly></td>
+                        <td><input id="avOI" readonly></td>
+                        <td><input id="addOI" readonly></td>
+                    </tr>
+                </table>
+                <div class="box13_1">
+                    <div>
+                        <label>Tipo de lente</label>
+                        <select type="text" id="tipoLente2" disabled>
+                            <option value="0">Seleccione una opción</option>
+                            <option value="Progresivo">Progresivo</option>
+                            <option value="Bifocal">Bifocal</option>
+                            <option value="Monofocal">Monofocal</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label>Filtro</label>
+                        <input type="text" id="filtro2" readonly>
+                    </div>
+                    <div>
+                        <label>Material</label>
+                        <input type="text" id="material2" readonly>
+                    </div>
+                </div>
+            </div>
+
+            <h2 id="dnp">DNP</h2>
+            <div class="form22">
+                <div class="box38">
+                    <div>
+                        <label>O.D.</label>
+                        <input type="text" id="dnpOD" readonly>
+                        <label>O.I.</label>
+                        <input type="text" id="dnpOI" readonly>
+                    </div>
+                </div>
+            </div>
+
+            <h2 id="prescripcionMedicamentosa">PRESCRIPCIÓN MEDICAMENTOSA</h2>
+            <div class="form24">
+                <table>
+                    <tr>
+                        <td>DCI (Denominación común internacional) </td>
+                        <td>Concentración</td>
+                        <td>Forma farmaceútica</td>
+                        <td>Cantidad</td>
+                    </tr>
+                    <tr>
+                        <td><input id="dci0" readonly></td>
+                        <td><input id="concentracion0" readonly></td>
+                        <td><input id="formaFarmaceutica0" readonly></td>
+                        <td><input id="cantidad0" readonly></td>
+                    </tr>
+                    <tr>
+                        <td><input id="dci1" readonly></td>
+                        <td><input id="concentracion1" readonly></td>
+                        <td><input id="formaFarmaceutica1" readonly></td>
+                        <td><input id="cantidad1" readonly></td>
+                    </tr>
+                    <tr>
+                        <td><input id="dci3" readonly></td>
+                        <td><input id="concentracion3" readonly></td>
+                        <td><input id="formaFarmaceutica3" readonly></td>
+                        <td><input id="cantidad3" readonly></td>
+                    </tr>
+                </table>
+                <div class="box41">
+                    <div>
+                        <label>Diagnóstico Principal</label>
+                        <input type="text" style="width: 5%;" id="digitarCodigo1" readonly>
+                        <select id="c1">
+                            <option value="0">Seleccione una opcion</option>
+                            <option value="H00">H00</option>
+                            <option value="H000">H000</option>
+                            <option value="H001">H001</option>
+                            <option value="H01">H01</option>
+                            <option value="H010">H010</option>
+                            <option value="H011">H011</option>
+                            <option value="H018">H018</option>
+                            <option value="H019">H019</option>
+                            <option value="H02">H02</option>
+                            <option value="H020">H020</option>
+                            <option value="H021">H021</option>
+                            <option value="H022">H022</option>
+                            <option value="H023">H023</option>
+                            <option value="H024">H024</option>
+                            <option value="H025">H025</option>
+                            <option value="H026">H026</option>
+                            <option value="H027">H027</option>
+                            <option value="H028">H028</option>
+                            <option value="H029">H029</option>
+                            <option value="H03">H03</option>
+                            <option value="H030">H030</option>
+                            <option value="H031">H031</option>
+                            <option value="H038">H038</option>
+                            <option value="H04">H04</option>
+                            <option value="H040">H040</option>
+                            <option value="H041">H041</option>
+                            <option value="H042">H042</option>
+                            <option value="H043">H043</option>
+                            <option value="H044">H044</option>
+                            <option value="H045">H045</option>
+                            <option value="H046">H046</option>
+                            <option value="H048">H048</option>
+                            <option value="H049">H049</option>
+                            <option value="H05">H05</option>
+                            <option value="H050">H050</option>
+                            <option value="H051">H051</option>
+                            <option value="H052">H052</option>
+                            <option value="H053">H053</option>
+                            <option value="H054">H054</option>
+                            <option value="H055">H055</option>
+                            <option value="H058">H058</option>
+                            <option value="H059">H059</option>
+                            <option value="H06">H06</option>
+                            <option value="H060">H060</option>
+                            <option value="H061">H061</option>
+                            <option value="H062">H062</option>
+                            <option value="H063">H063</option>
+                            <option value="H10">H10</option>
+                            <option value="H100">H100</option>
+                            <option value="H101">H101</option>
+                            <option value="H102">H102</option>
+                            <option value="H103">H103</option>
+                            <option value="H104">H104</option>
+                            <option value="H105">H105</option>
+                            <option value="H108">H108</option>
+                            <option value="H109">H109</option>
+                            <option value="H11">H11</option>
+                            <option value="H110">H110</option>
+                            <option value="H111">H111</option>
+                            <option value="H112">H112</option>
+                            <option value="H113">H113</option>
+                            <option value="H114">H114</option>
+                            <option value="H118">H118</option>
+                            <option value="H119">H119</option>
+                            <option value="H13">H13</option>
+                            <option value="H130">H130</option>
+                            <option value="H131">H131</option>
+                            <option value="H132">H132</option>
+                            <option value="H133">H133</option>
+                            <option value="H138">H138</option>
+                            <option value="H15">H15</option>
+                            <option value="H150">H150</option>
+                            <option value="H151">H151</option>
+                            <option value="H158">H158</option>
+                            <option value="H159">H159</option>
+                            <option value="H16">H16</option>
+                            <option value="H160">H160</option>
+                            <option value="H161">H161</option>
+                            <option value="H162">H162</option>
+                            <option value="H163">H163</option>
+                            <option value="H164">H164</option>
+                            <option value="H168">H168</option>
+                            <option value="H169">H169</option>
+                            <option value="H17">H17</option>
+                            <option value="H170">H170</option>
+                            <option value="H171">H171</option>
+                            <option value="H178">H178</option>
+                            <option value="H179">H179</option>
+                            <option value="H18">H18</option>
+                            <option value="H180">H180</option>
+                            <option value="H181">H181</option>
+                            <option value="H182">H182</option>
+                            <option value="H183">H183</option>
+                            <option value="H184">H184</option>
+                            <option value="H185">H185</option>
+                            <option value="H186">H186</option>
+                            <option value="H187">H187</option>
+                            <option value="H188">H188</option>
+                            <option value="H189">H189</option>
+                            <option value="H19">H19</option>
+                            <option value="H190">H190</option>
+                            <option value="H191">H191</option>
+                            <option value="H192">H192</option>
+                            <option value="H193">H193</option>
+                            <option value="H198">H198</option>
+                            <option value="H20">H20</option>
+                            <option value="H200">H200</option>
+                            <option value="H201">H201</option>
+                            <option value="H202">H202</option>
+                            <option value="H208">H208</option>
+                            <option value="H209">H209</option>
+                            <option value="H21">H21</option>
+                            <option value="H210">H210</option>
+                            <option value="H211">H211</option>
+                            <option value="H212">H212</option>
+                            <option value="H213">H213</option>
+                            <option value="H214">H214</option>
+                            <option value="H215">H215</option>
+                            <option value="H218">H218</option>
+                            <option value="H219">H219</option>
+                            <option value="H22">H22</option>
+                            <option value="H220">H220</option>
+                            <option value="H221">H221</option>
+                            <option value="H228">H228</option>
+                            <option value="H25">H25</option>
+                            <option value="H250">H250</option>
+                            <option value="H251">H251</option>
+                            <option value="H252">H252</option>
+                            <option value="H258">H258</option>
+                            <option value="H259">H259</option>
+                            <option value="H26">H26</option>
+                            <option value="H260">H260</option>
+                            <option value="H261">H261</option>
+                            <option value="H262">H262</option>
+                            <option value="H263">H263</option>
+                            <option value="H264">H264</option>
+                            <option value="H268">H268</option>
+                            <option value="H269">H269</option>
+                            <option value="H27">H27</option>
+                            <option value="H270">H270</option>
+                            <option value="H271">H271</option>
+                            <option value="H278">H278</option>
+                            <option value="H279">H279</option>
+                            <option value="H28">H28</option>
+                            <option value="H280">H280</option>
+                            <option value="H281">H281</option>
+                            <option value="H282">H282</option>
+                            <option value="H288">H288</option>
+                            <option value="H30">H30</option>
+                            <option value="H300">H300</option>
+                            <option value="H301">H301</option>
+                            <option value="H302">H302</option>
+                            <option value="H308">H308</option>
+                            <option value="H309">H309</option>
+                            <option value="H31">H31</option>
+                            <option value="H310">H310</option>
+                            <option value="H311">H311</option>
+                            <option value="H312">H312</option>
+                            <option value="H313">H313</option>
+                            <option value="H314">H314</option>
+                            <option value="H318">H318</option>
+                            <option value="H319">H319</option>
+                            <option value="H32">H32</option>
+                            <option value="H320">H320</option>
+                            <option value="H328">H328</option>
+                            <option value="H33">H33</option>
+                            <option value="H330">H330</option>
+                            <option value="H331">H331</option>
+                            <option value="H332">H332</option>
+                            <option value="H333">H333</option>
+                            <option value="H334">H334</option>
+                            <option value="H335">H335</option>
+                            <option value="H34">H34</option>
+                            <option value="H340">H340</option>
+                            <option value="H341">H341</option>
+                            <option value="H342">H342</option>
+                            <option value="H348">H348</option>
+                            <option value="H349">H349</option>
+                            <option value="H35">H35</option>
+                            <option value="H350">H350</option>
+                            <option value="H351">H351</option>
+                            <option value="H352">H352</option>
+                            <option value="H353">H353</option>
+                            <option value="H354">H354</option>
+                            <option value="H355">H355</option>
+                            <option value="H356">H356</option>
+                            <option value="H357">H357</option>
+                            <option value="H358">H358</option>
+                            <option value="H359">H359</option>
+                            <option value="H36">H36</option>
+                            <option value="H360">H360</option>
+                            <option value="H368">H368</option>
+                            <option value="H40">H40</option>
+                            <option value="H400">H400</option>
+                            <option value="H401">H401</option>
+                            <option value="H402">H402</option>
+                            <option value="H403">H403</option>
+                            <option value="H404">H404</option>
+                            <option value="H405">H405</option>
+                            <option value="H406">H406</option>
+                            <option value="H408">H408</option>
+                            <option value="H409">H409</option>
+                            <option value="H42">H42</option>
+                            <option value="H420">H420</option>
+                            <option value="H428">H43</option>
+                            <option value="H430">H430</option>
+                            <option value="H431">H431</option>
+                            <option value="H432">H432</option>
+                            <option value="H433">H433</option>
+                            <option value="H438">H438</option>
+                            <option value="H439">H439</option>
+                            <option value="H44">H44</option>
+                            <option value="H440">H440</option>
+                            <option value="H441">H441</option>
+                            <option value="H442">H442</option>
+                            <option value="H443">H443</option>
+                            <option value="H444">H444</option>
+                            <option value="H445">H445</option>
+                            <option value="H446">H446</option>
+                            <option value="H447">H447</option>
+                            <option value="H448">H448</option>
+                            <option value="H449">H449</option>
+                            <option value="H45">H45</option>
+                            <option value="H450">H450</option>
+                            <option value="H451">H451</option>
+                            <option value="H458">H458</option>
+                            <option value="H46">H46</option>
+                            <option value="H47">H47</option>
+                            <option value="H470">H470</option>
+                            <option value="H471">H471</option>
+                            <option value="H472">H472</option>
+                            <option value="H473">H473</option>
+                            <option value="H474">H474</option>
+                            <option value="H475">H475</option>
+                            <option value="H476">H476</option>
+                            <option value="H477">H477</option>
+                            <option value="H48">H48</option>
+                            <option value="H480">H480</option>
+                            <option value="H481">H481</option>
+                            <option value="H488">H488</option>
+                            <option value="H49">H49</option>
+                            <option value="H490">H490</option>
+                            <option value="H491">H491</option>
+                            <option value="H492">H492</option>
+                            <option value="H493">H493</option>
+                            <option value="H494">H494</option>
+                            <option value="H498">H498</option>
+                            <option value="H499">H499</option>
+                            <option value="H50">H50</option>
+                            <option value="H500">H500</option>
+                            <option value="H501">H501</option>
+                            <option value="H502">H502</option>
+                            <option value="H503">H503</option>
+                            <option value="H504">H504</option>
+                            <option value="H505">H505</option>
+                            <option value="H506">H506</option>
+                            <option value="H508">H508</option>
+                            <option value="H509">H509</option>
+                            <option value="H51">H51</option>
+                            <option value="H510">H510</option>
+                            <option value="H511">H511</option>
+                            <option value="H512">H512</option>
+                            <option value="H518">H518</option>
+                            <option value="H519">H519</option>
+                            <option value="H52">H52</option>
+                            <option value="H520">H520</option>
+                            <option value="H521">H521</option>
+                            <option value="H522">H522</option>
+                            <option value="H523">H523</option>
+                            <option value="H524">H524</option>
+                            <option value="H525">H525</option>
+                            <option value="H526">H526</option>
+                            <option value="H527">H527</option>
+                            <option value="H53">H53</option>
+                            <option value="H530">H530</option>
+                            <option value="H531">H531</option>
+                            <option value="H532">H532</option>
+                            <option value="H533">H533</option>
+                            <option value="H534">H534</option>
+                            <option value="H535">H535</option>
+                            <option value="H536">H536</option>
+                            <option value="H538">H538</option>
+                            <option value="H539">H539</option>
+                            <option value="H54">H54</option>
+                            <option value="H540">H540</option>
+                            <option value="H541">H541</option>
+                            <option value="H542">H542</option>
+                            <option value="H543">H543</option>
+                            <option value="H544">H544</option>
+                            <option value="H545">H545</option>
+                            <option value="H546">H546</option>
+                            <option value="H547">H547</option>
+                            <option value="H55">H55</option>
+                            <option value="H57">H57</option>
+                            <option value="H570">H570</option>
+                            <option value="H571">H571</option>
+                            <option value="H578">H578</option>
+                            <option value="H579">H579</option>
+                            <option value="H58">H58</option>
+                            <option value="H580">H580</option>
+                            <option value="H581">H581</option>
+                            <option value="H588">H588</option>
+                            <option value="H59">H59</option>
+                            <option value="H590">H590</option>
+                            <option value="H598">H598</option>
+                            <option value="H599">H599</option>
+                        </select>
+                        <label>CIE 10</label>
+                        <input type="text" style="width: 50%;" readonly id="c_1" readonly>
+                    </div>
+                    <div>
+                        <label>Diagnóstico R- 1 &nbsp&nbsp&nbsp&nbsp&nbsp</label>
+                        <input type="text" style="width: 5%;" id="digitarCodigo2" readonly>
+                        <select id="c2">
+                            <option value="0">Seleccione una opcion</option>
+                            <option value="H00">H00</option>
+                            <option value="H000">H000</option>
+                            <option value="H001">H001</option>
+                            <option value="H01">H01</option>
+                            <option value="H010">H010</option>
+                            <option value="H011">H011</option>
+                            <option value="H018">H018</option>
+                            <option value="H019">H019</option>
+                            <option value="H02">H02</option>
+                            <option value="H020">H020</option>
+                            <option value="H021">H021</option>
+                            <option value="H022">H022</option>
+                            <option value="H023">H023</option>
+                            <option value="H024">H024</option>
+                            <option value="H025">H025</option>
+                            <option value="H026">H026</option>
+                            <option value="H027">H027</option>
+                            <option value="H028">H028</option>
+                            <option value="H029">H029</option>
+                            <option value="H03">H03</option>
+                            <option value="H030">H030</option>
+                            <option value="H031">H031</option>
+                            <option value="H038">H038</option>
+                            <option value="H04">H04</option>
+                            <option value="H040">H040</option>
+                            <option value="H041">H041</option>
+                            <option value="H042">H042</option>
+                            <option value="H043">H043</option>
+                            <option value="H044">H044</option>
+                            <option value="H045">H045</option>
+                            <option value="H046">H046</option>
+                            <option value="H048">H048</option>
+                            <option value="H049">H049</option>
+                            <option value="H05">H05</option>
+                            <option value="H050">H050</option>
+                            <option value="H051">H051</option>
+                            <option value="H052">H052</option>
+                            <option value="H053">H053</option>
+                            <option value="H054">H054</option>
+                            <option value="H055">H055</option>
+                            <option value="H058">H058</option>
+                            <option value="H059">H059</option>
+                            <option value="H06">H06</option>
+                            <option value="H060">H060</option>
+                            <option value="H061">H061</option>
+                            <option value="H062">H062</option>
+                            <option value="H063">H063</option>
+                            <option value="H10">H10</option>
+                            <option value="H100">H100</option>
+                            <option value="H101">H101</option>
+                            <option value="H102">H102</option>
+                            <option value="H103">H103</option>
+                            <option value="H104">H104</option>
+                            <option value="H105">H105</option>
+                            <option value="H108">H108</option>
+                            <option value="H109">H109</option>
+                            <option value="H11">H11</option>
+                            <option value="H110">H110</option>
+                            <option value="H111">H111</option>
+                            <option value="H112">H112</option>
+                            <option value="H113">H113</option>
+                            <option value="H114">H114</option>
+                            <option value="H118">H118</option>
+                            <option value="H119">H119</option>
+                            <option value="H13">H13</option>
+                            <option value="H130">H130</option>
+                            <option value="H131">H131</option>
+                            <option value="H132">H132</option>
+                            <option value="H133">H133</option>
+                            <option value="H138">H138</option>
+                            <option value="H15">H15</option>
+                            <option value="H150">H150</option>
+                            <option value="H151">H151</option>
+                            <option value="H158">H158</option>
+                            <option value="H159">H159</option>
+                            <option value="H16">H16</option>
+                            <option value="H160">H160</option>
+                            <option value="H161">H161</option>
+                            <option value="H162">H162</option>
+                            <option value="H163">H163</option>
+                            <option value="H164">H164</option>
+                            <option value="H168">H168</option>
+                            <option value="H169">H169</option>
+                            <option value="H17">H17</option>
+                            <option value="H170">H170</option>
+                            <option value="H171">H171</option>
+                            <option value="H178">H178</option>
+                            <option value="H179">H179</option>
+                            <option value="H18">H18</option>
+                            <option value="H180">H180</option>
+                            <option value="H181">H181</option>
+                            <option value="H182">H182</option>
+                            <option value="H183">H183</option>
+                            <option value="H184">H184</option>
+                            <option value="H185">H185</option>
+                            <option value="H186">H186</option>
+                            <option value="H187">H187</option>
+                            <option value="H188">H188</option>
+                            <option value="H189">H189</option>
+                            <option value="H19">H19</option>
+                            <option value="H190">H190</option>
+                            <option value="H191">H191</option>
+                            <option value="H192">H192</option>
+                            <option value="H193">H193</option>
+                            <option value="H198">H198</option>
+                            <option value="H20">H20</option>
+                            <option value="H200">H200</option>
+                            <option value="H201">H201</option>
+                            <option value="H202">H202</option>
+                            <option value="H208">H208</option>
+                            <option value="H209">H209</option>
+                            <option value="H21">H21</option>
+                            <option value="H210">H210</option>
+                            <option value="H211">H211</option>
+                            <option value="H212">H212</option>
+                            <option value="H213">H213</option>
+                            <option value="H214">H214</option>
+                            <option value="H215">H215</option>
+                            <option value="H218">H218</option>
+                            <option value="H219">H219</option>
+                            <option value="H22">H22</option>
+                            <option value="H220">H220</option>
+                            <option value="H221">H221</option>
+                            <option value="H228">H228</option>
+                            <option value="H25">H25</option>
+                            <option value="H250">H250</option>
+                            <option value="H251">H251</option>
+                            <option value="H252">H252</option>
+                            <option value="H258">H258</option>
+                            <option value="H259">H259</option>
+                            <option value="H26">H26</option>
+                            <option value="H260">H260</option>
+                            <option value="H261">H261</option>
+                            <option value="H262">H262</option>
+                            <option value="H263">H263</option>
+                            <option value="H264">H264</option>
+                            <option value="H268">H268</option>
+                            <option value="H269">H269</option>
+                            <option value="H27">H27</option>
+                            <option value="H270">H270</option>
+                            <option value="H271">H271</option>
+                            <option value="H278">H278</option>
+                            <option value="H279">H279</option>
+                            <option value="H28">H28</option>
+                            <option value="H280">H280</option>
+                            <option value="H281">H281</option>
+                            <option value="H282">H282</option>
+                            <option value="H288">H288</option>
+                            <option value="H30">H30</option>
+                            <option value="H300">H300</option>
+                            <option value="H301">H301</option>
+                            <option value="H302">H302</option>
+                            <option value="H308">H308</option>
+                            <option value="H309">H309</option>
+                            <option value="H31">H31</option>
+                            <option value="H310">H310</option>
+                            <option value="H311">H311</option>
+                            <option value="H312">H312</option>
+                            <option value="H313">H313</option>
+                            <option value="H314">H314</option>
+                            <option value="H318">H318</option>
+                            <option value="H319">H319</option>
+                            <option value="H32">H32</option>
+                            <option value="H320">H320</option>
+                            <option value="H328">H328</option>
+                            <option value="H33">H33</option>
+                            <option value="H330">H330</option>
+                            <option value="H331">H331</option>
+                            <option value="H332">H332</option>
+                            <option value="H333">H333</option>
+                            <option value="H334">H334</option>
+                            <option value="H335">H335</option>
+                            <option value="H34">H34</option>
+                            <option value="H340">H340</option>
+                            <option value="H341">H341</option>
+                            <option value="H342">H342</option>
+                            <option value="H348">H348</option>
+                            <option value="H349">H349</option>
+                            <option value="H35">H35</option>
+                            <option value="H350">H350</option>
+                            <option value="H351">H351</option>
+                            <option value="H352">H352</option>
+                            <option value="H353">H353</option>
+                            <option value="H354">H354</option>
+                            <option value="H355">H355</option>
+                            <option value="H356">H356</option>
+                            <option value="H357">H357</option>
+                            <option value="H358">H358</option>
+                            <option value="H359">H359</option>
+                            <option value="H36">H36</option>
+                            <option value="H360">H360</option>
+                            <option value="H368">H368</option>
+                            <option value="H40">H40</option>
+                            <option value="H400">H400</option>
+                            <option value="H401">H401</option>
+                            <option value="H402">H402</option>
+                            <option value="H403">H403</option>
+                            <option value="H404">H404</option>
+                            <option value="H405">H405</option>
+                            <option value="H406">H406</option>
+                            <option value="H408">H408</option>
+                            <option value="H409">H409</option>
+                            <option value="H42">H42</option>
+                            <option value="H420">H420</option>
+                            <option value="H428">H43</option>
+                            <option value="H430">H430</option>
+                            <option value="H431">H431</option>
+                            <option value="H432">H432</option>
+                            <option value="H433">H433</option>
+                            <option value="H438">H438</option>
+                            <option value="H439">H439</option>
+                            <option value="H44">H44</option>
+                            <option value="H440">H440</option>
+                            <option value="H441">H441</option>
+                            <option value="H442">H442</option>
+                            <option value="H443">H443</option>
+                            <option value="H444">H444</option>
+                            <option value="H445">H445</option>
+                            <option value="H446">H446</option>
+                            <option value="H447">H447</option>
+                            <option value="H448">H448</option>
+                            <option value="H449">H449</option>
+                            <option value="H45">H45</option>
+                            <option value="H450">H450</option>
+                            <option value="H451">H451</option>
+                            <option value="H458">H458</option>
+                            <option value="H46">H46</option>
+                            <option value="H47">H47</option>
+                            <option value="H470">H470</option>
+                            <option value="H471">H471</option>
+                            <option value="H472">H472</option>
+                            <option value="H473">H473</option>
+                            <option value="H474">H474</option>
+                            <option value="H475">H475</option>
+                            <option value="H476">H476</option>
+                            <option value="H477">H477</option>
+                            <option value="H48">H48</option>
+                            <option value="H480">H480</option>
+                            <option value="H481">H481</option>
+                            <option value="H488">H488</option>
+                            <option value="H49">H49</option>
+                            <option value="H490">H490</option>
+                            <option value="H491">H491</option>
+                            <option value="H492">H492</option>
+                            <option value="H493">H493</option>
+                            <option value="H494">H494</option>
+                            <option value="H498">H498</option>
+                            <option value="H499">H499</option>
+                            <option value="H50">H50</option>
+                            <option value="H500">H500</option>
+                            <option value="H501">H501</option>
+                            <option value="H502">H502</option>
+                            <option value="H503">H503</option>
+                            <option value="H504">H504</option>
+                            <option value="H505">H505</option>
+                            <option value="H506">H506</option>
+                            <option value="H508">H508</option>
+                            <option value="H509">H509</option>
+                            <option value="H51">H51</option>
+                            <option value="H510">H510</option>
+                            <option value="H511">H511</option>
+                            <option value="H512">H512</option>
+                            <option value="H518">H518</option>
+                            <option value="H519">H519</option>
+                            <option value="H52">H52</option>
+                            <option value="H520">H520</option>
+                            <option value="H521">H521</option>
+                            <option value="H522">H522</option>
+                            <option value="H523">H523</option>
+                            <option value="H524">H524</option>
+                            <option value="H525">H525</option>
+                            <option value="H526">H526</option>
+                            <option value="H527">H527</option>
+                            <option value="H53">H53</option>
+                            <option value="H530">H530</option>
+                            <option value="H531">H531</option>
+                            <option value="H532">H532</option>
+                            <option value="H533">H533</option>
+                            <option value="H534">H534</option>
+                            <option value="H535">H535</option>
+                            <option value="H536">H536</option>
+                            <option value="H538">H538</option>
+                            <option value="H539">H539</option>
+                            <option value="H54">H54</option>
+                            <option value="H540">H540</option>
+                            <option value="H541">H541</option>
+                            <option value="H542">H542</option>
+                            <option value="H543">H543</option>
+                            <option value="H544">H544</option>
+                            <option value="H545">H545</option>
+                            <option value="H546">H546</option>
+                            <option value="H547">H547</option>
+                            <option value="H55">H55</option>
+                            <option value="H57">H57</option>
+                            <option value="H570">H570</option>
+                            <option value="H571">H571</option>
+                            <option value="H578">H578</option>
+                            <option value="H579">H579</option>
+                            <option value="H58">H58</option>
+                            <option value="H580">H580</option>
+                            <option value="H581">H581</option>
+                            <option value="H588">H588</option>
+                            <option value="H59">H59</option>
+                            <option value="H590">H590</option>
+                            <option value="H598">H598</option>
+                            <option value="H599">H599</option>
+                        </select>
+                        <label>CIE 10</label>
+                        <input type="text" style="width: 50%;" readonly id="c_2" readonly>
+                    </div>
+                    <div>
+                        <label>Diagnóstico R- 2 &nbsp&nbsp&nbsp&nbsp&nbsp</label>
+                        <input type="text" style="width: 5%;" id="digitarCodigo3" readonly>
+                        <select id="c3">
+                            <option value="0">Seleccione una opcion</option>
+                            <option value="H00">H00</option>
+                            <option value="H000">H000</option>
+                            <option value="H001">H001</option>
+                            <option value="H01">H01</option>
+                            <option value="H010">H010</option>
+                            <option value="H011">H011</option>
+                            <option value="H018">H018</option>
+                            <option value="H019">H019</option>
+                            <option value="H02">H02</option>
+                            <option value="H020">H020</option>
+                            <option value="H021">H021</option>
+                            <option value="H022">H022</option>
+                            <option value="H023">H023</option>
+                            <option value="H024">H024</option>
+                            <option value="H025">H025</option>
+                            <option value="H026">H026</option>
+                            <option value="H027">H027</option>
+                            <option value="H028">H028</option>
+                            <option value="H029">H029</option>
+                            <option value="H03">H03</option>
+                            <option value="H030">H030</option>
+                            <option value="H031">H031</option>
+                            <option value="H038">H038</option>
+                            <option value="H04">H04</option>
+                            <option value="H040">H040</option>
+                            <option value="H041">H041</option>
+                            <option value="H042">H042</option>
+                            <option value="H043">H043</option>
+                            <option value="H044">H044</option>
+                            <option value="H045">H045</option>
+                            <option value="H046">H046</option>
+                            <option value="H048">H048</option>
+                            <option value="H049">H049</option>
+                            <option value="H05">H05</option>
+                            <option value="H050">H050</option>
+                            <option value="H051">H051</option>
+                            <option value="H052">H052</option>
+                            <option value="H053">H053</option>
+                            <option value="H054">H054</option>
+                            <option value="H055">H055</option>
+                            <option value="H058">H058</option>
+                            <option value="H059">H059</option>
+                            <option value="H06">H06</option>
+                            <option value="H060">H060</option>
+                            <option value="H061">H061</option>
+                            <option value="H062">H062</option>
+                            <option value="H063">H063</option>
+                            <option value="H10">H10</option>
+                            <option value="H100">H100</option>
+                            <option value="H101">H101</option>
+                            <option value="H102">H102</option>
+                            <option value="H103">H103</option>
+                            <option value="H104">H104</option>
+                            <option value="H105">H105</option>
+                            <option value="H108">H108</option>
+                            <option value="H109">H109</option>
+                            <option value="H11">H11</option>
+                            <option value="H110">H110</option>
+                            <option value="H111">H111</option>
+                            <option value="H112">H112</option>
+                            <option value="H113">H113</option>
+                            <option value="H114">H114</option>
+                            <option value="H118">H118</option>
+                            <option value="H119">H119</option>
+                            <option value="H13">H13</option>
+                            <option value="H130">H130</option>
+                            <option value="H131">H131</option>
+                            <option value="H132">H132</option>
+                            <option value="H133">H133</option>
+                            <option value="H138">H138</option>
+                            <option value="H15">H15</option>
+                            <option value="H150">H150</option>
+                            <option value="H151">H151</option>
+                            <option value="H158">H158</option>
+                            <option value="H159">H159</option>
+                            <option value="H16">H16</option>
+                            <option value="H160">H160</option>
+                            <option value="H161">H161</option>
+                            <option value="H162">H162</option>
+                            <option value="H163">H163</option>
+                            <option value="H164">H164</option>
+                            <option value="H168">H168</option>
+                            <option value="H169">H169</option>
+                            <option value="H17">H17</option>
+                            <option value="H170">H170</option>
+                            <option value="H171">H171</option>
+                            <option value="H178">H178</option>
+                            <option value="H179">H179</option>
+                            <option value="H18">H18</option>
+                            <option value="H180">H180</option>
+                            <option value="H181">H181</option>
+                            <option value="H182">H182</option>
+                            <option value="H183">H183</option>
+                            <option value="H184">H184</option>
+                            <option value="H185">H185</option>
+                            <option value="H186">H186</option>
+                            <option value="H187">H187</option>
+                            <option value="H188">H188</option>
+                            <option value="H189">H189</option>
+                            <option value="H19">H19</option>
+                            <option value="H190">H190</option>
+                            <option value="H191">H191</option>
+                            <option value="H192">H192</option>
+                            <option value="H193">H193</option>
+                            <option value="H198">H198</option>
+                            <option value="H20">H20</option>
+                            <option value="H200">H200</option>
+                            <option value="H201">H201</option>
+                            <option value="H202">H202</option>
+                            <option value="H208">H208</option>
+                            <option value="H209">H209</option>
+                            <option value="H21">H21</option>
+                            <option value="H210">H210</option>
+                            <option value="H211">H211</option>
+                            <option value="H212">H212</option>
+                            <option value="H213">H213</option>
+                            <option value="H214">H214</option>
+                            <option value="H215">H215</option>
+                            <option value="H218">H218</option>
+                            <option value="H219">H219</option>
+                            <option value="H22">H22</option>
+                            <option value="H220">H220</option>
+                            <option value="H221">H221</option>
+                            <option value="H228">H228</option>
+                            <option value="H25">H25</option>
+                            <option value="H250">H250</option>
+                            <option value="H251">H251</option>
+                            <option value="H252">H252</option>
+                            <option value="H258">H258</option>
+                            <option value="H259">H259</option>
+                            <option value="H26">H26</option>
+                            <option value="H260">H260</option>
+                            <option value="H261">H261</option>
+                            <option value="H262">H262</option>
+                            <option value="H263">H263</option>
+                            <option value="H264">H264</option>
+                            <option value="H268">H268</option>
+                            <option value="H269">H269</option>
+                            <option value="H27">H27</option>
+                            <option value="H270">H270</option>
+                            <option value="H271">H271</option>
+                            <option value="H278">H278</option>
+                            <option value="H279">H279</option>
+                            <option value="H28">H28</option>
+                            <option value="H280">H280</option>
+                            <option value="H281">H281</option>
+                            <option value="H282">H282</option>
+                            <option value="H288">H288</option>
+                            <option value="H30">H30</option>
+                            <option value="H300">H300</option>
+                            <option value="H301">H301</option>
+                            <option value="H302">H302</option>
+                            <option value="H308">H308</option>
+                            <option value="H309">H309</option>
+                            <option value="H31">H31</option>
+                            <option value="H310">H310</option>
+                            <option value="H311">H311</option>
+                            <option value="H312">H312</option>
+                            <option value="H313">H313</option>
+                            <option value="H314">H314</option>
+                            <option value="H318">H318</option>
+                            <option value="H319">H319</option>
+                            <option value="H32">H32</option>
+                            <option value="H320">H320</option>
+                            <option value="H328">H328</option>
+                            <option value="H33">H33</option>
+                            <option value="H330">H330</option>
+                            <option value="H331">H331</option>
+                            <option value="H332">H332</option>
+                            <option value="H333">H333</option>
+                            <option value="H334">H334</option>
+                            <option value="H335">H335</option>
+                            <option value="H34">H34</option>
+                            <option value="H340">H340</option>
+                            <option value="H341">H341</option>
+                            <option value="H342">H342</option>
+                            <option value="H348">H348</option>
+                            <option value="H349">H349</option>
+                            <option value="H35">H35</option>
+                            <option value="H350">H350</option>
+                            <option value="H351">H351</option>
+                            <option value="H352">H352</option>
+                            <option value="H353">H353</option>
+                            <option value="H354">H354</option>
+                            <option value="H355">H355</option>
+                            <option value="H356">H356</option>
+                            <option value="H357">H357</option>
+                            <option value="H358">H358</option>
+                            <option value="H359">H359</option>
+                            <option value="H36">H36</option>
+                            <option value="H360">H360</option>
+                            <option value="H368">H368</option>
+                            <option value="H40">H40</option>
+                            <option value="H400">H400</option>
+                            <option value="H401">H401</option>
+                            <option value="H402">H402</option>
+                            <option value="H403">H403</option>
+                            <option value="H404">H404</option>
+                            <option value="H405">H405</option>
+                            <option value="H406">H406</option>
+                            <option value="H408">H408</option>
+                            <option value="H409">H409</option>
+                            <option value="H42">H42</option>
+                            <option value="H420">H420</option>
+                            <option value="H428">H43</option>
+                            <option value="H430">H430</option>
+                            <option value="H431">H431</option>
+                            <option value="H432">H432</option>
+                            <option value="H433">H433</option>
+                            <option value="H438">H438</option>
+                            <option value="H439">H439</option>
+                            <option value="H44">H44</option>
+                            <option value="H440">H440</option>
+                            <option value="H441">H441</option>
+                            <option value="H442">H442</option>
+                            <option value="H443">H443</option>
+                            <option value="H444">H444</option>
+                            <option value="H445">H445</option>
+                            <option value="H446">H446</option>
+                            <option value="H447">H447</option>
+                            <option value="H448">H448</option>
+                            <option value="H449">H449</option>
+                            <option value="H45">H45</option>
+                            <option value="H450">H450</option>
+                            <option value="H451">H451</option>
+                            <option value="H458">H458</option>
+                            <option value="H46">H46</option>
+                            <option value="H47">H47</option>
+                            <option value="H470">H470</option>
+                            <option value="H471">H471</option>
+                            <option value="H472">H472</option>
+                            <option value="H473">H473</option>
+                            <option value="H474">H474</option>
+                            <option value="H475">H475</option>
+                            <option value="H476">H476</option>
+                            <option value="H477">H477</option>
+                            <option value="H48">H48</option>
+                            <option value="H480">H480</option>
+                            <option value="H481">H481</option>
+                            <option value="H488">H488</option>
+                            <option value="H49">H49</option>
+                            <option value="H490">H490</option>
+                            <option value="H491">H491</option>
+                            <option value="H492">H492</option>
+                            <option value="H493">H493</option>
+                            <option value="H494">H494</option>
+                            <option value="H498">H498</option>
+                            <option value="H499">H499</option>
+                            <option value="H50">H50</option>
+                            <option value="H500">H500</option>
+                            <option value="H501">H501</option>
+                            <option value="H502">H502</option>
+                            <option value="H503">H503</option>
+                            <option value="H504">H504</option>
+                            <option value="H505">H505</option>
+                            <option value="H506">H506</option>
+                            <option value="H508">H508</option>
+                            <option value="H509">H509</option>
+                            <option value="H51">H51</option>
+                            <option value="H510">H510</option>
+                            <option value="H511">H511</option>
+                            <option value="H512">H512</option>
+                            <option value="H518">H518</option>
+                            <option value="H519">H519</option>
+                            <option value="H52">H52</option>
+                            <option value="H520">H520</option>
+                            <option value="H521">H521</option>
+                            <option value="H522">H522</option>
+                            <option value="H523">H523</option>
+                            <option value="H524">H524</option>
+                            <option value="H525">H525</option>
+                            <option value="H526">H526</option>
+                            <option value="H527">H527</option>
+                            <option value="H53">H53</option>
+                            <option value="H530">H530</option>
+                            <option value="H531">H531</option>
+                            <option value="H532">H532</option>
+                            <option value="H533">H533</option>
+                            <option value="H534">H534</option>
+                            <option value="H535">H535</option>
+                            <option value="H536">H536</option>
+                            <option value="H538">H538</option>
+                            <option value="H539">H539</option>
+                            <option value="H54">H54</option>
+                            <option value="H540">H540</option>
+                            <option value="H541">H541</option>
+                            <option value="H542">H542</option>
+                            <option value="H543">H543</option>
+                            <option value="H544">H544</option>
+                            <option value="H545">H545</option>
+                            <option value="H546">H546</option>
+                            <option value="H547">H547</option>
+                            <option value="H55">H55</option>
+                            <option value="H57">H57</option>
+                            <option value="H570">H570</option>
+                            <option value="H571">H571</option>
+                            <option value="H578">H578</option>
+                            <option value="H579">H579</option>
+                            <option value="H58">H58</option>
+                            <option value="H580">H580</option>
+                            <option value="H581">H581</option>
+                            <option value="H588">H588</option>
+                            <option value="H59">H59</option>
+                            <option value="H590">H590</option>
+                            <option value="H598">H598</option>
+                            <option value="H599">H599</option>
+                        </select>
+                        <label>CIE 10</label>
+                        <input type="text" style="width: 50%;" readonly id="c_3" readonly>
+                    </div>
+                    <div class="box41_sub">
+                        <label>Origen de la Enfermedad: </label>
+                        <input type="text" id="origenEnfermedad" readonly>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="recomendacionConducta">
+                <h2 id="recomendaciones">Recomendaciones de uso</h2>
+                <h2 id="conducta">CONDUCTA</h2>
+                <div class="form25">
+                    <div>
+                        <div>
+                            <label>Recomendaciones de uso:</label>
+                            <textarea id="recomendacionesUso" readonly></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form25">
+                    <div>
+                        <div>
+                            <label>Conducta:</label>
+                            <textarea id="conductaDB" readonly></textarea>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <label>Control:</label>
+                            <textarea id="controlDB" readonly></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h2 id="remisiones">REMISIONES</h2>
+            <div class="form26">
+                <div class="box42">
+                    <div>
+                        <label>Remisiones:</label>
+                        <textarea id="remisionesDB" readonly></textarea>
+                    </div>
+                    <div>
+                        <label>Hora salida:</label>
+                        <input type="time" id="horaSalida" readonly>
+                    </div>
+                    <div class="box42_sub1">
+                        <label>Estudiante:</label>
+                        <input type="text" id="estudiante" readonly>
+                        <label style="margin-left: 5%;">Profesor:</label>
+                        <select id="profesor" disabled>
+                            <option value="0">Seleccione una opción</option>
+                        </select>
+
+                    </div>
+                    <div class="box42_sub1">
+                        <label>No. Factura:</label>
+                        <input type="text" id="noFactura" readonly>
+                        <label style="margin-left: 5%;">Valor Consulta:</label>
+                        <input type="text" id="valorFactura" style="width: 30%;" readonly>
+                    </div>
+                </div>
+            </div>
+
+            <button id="send">Volver al menú principal</button>
+
+        </div>
+    </section>
+    <script src="/controller/clinicHistory/viewClinicHistory.js" type="module"></script>
+</body>
+
+</html>
