@@ -557,9 +557,7 @@ onAuthStateChanged(auth, (user) => {
 
             //Anamnesis
             var motivoConsulta = document.getElementById("motivoConsulta").value
-            var antiguedadMolestia = document.getElementById("antiguedadMolestia").value
-            var antecedentesPersonales = document.getElementById("antecedentesPersonales").value
-            var antecedentesFamiliares = document.getElementById("antecedentesFamiliares").value
+            var antecedentesAnamnesis = document.getElementById("antecedentesAnamnesis").value
 
             //Signos y síntomas
             var cefalea = document.getElementById("cefalea").value
@@ -588,7 +586,7 @@ onAuthStateChanged(auth, (user) => {
             var tiempoUso = document.getElementById("tiempoUso").value
 
             //Agudeza visual
-            var optotipoUtilizado = document.getElementById("optotipoUtilizado").value
+            var testUtilizado = document.getElementById("testUtilizado").value
             var lejosSCOD = document.getElementById("lejosSCOD").value
             var phSCOD = document.getElementById("phSCOD").value
             var aoSCODOI = document.getElementById("aoSCODOI").value
@@ -598,63 +596,6 @@ onAuthStateChanged(auth, (user) => {
             var phSCOI = document.getElementById("phSCOI").value
             var cercaSCOI = document.getElementById("cercaSCOI").value
 
-            //Queratometría
-            var queratometriaOD = document.getElementById("queratometriaOD").value
-            var queratometriaMirasOD = document.getElementById("queratometriaMirasOD").value
-            var queratometriaOI = document.getElementById("queratometriaOI").value
-            var queratometriaMirasOI = document.getElementById("queratometriaMirasOI").value
-
-            //Retinoscopia
-            var retinoscopiaEsferaOD = document.getElementById("retinoscopiaEsferaOD").value
-            var retinoscopiaCilindroOD = document.getElementById("retinoscopiaCilindroOD").value
-            var retinoscopiaEjeOD = document.getElementById("retinoscopiaEjeOD").value
-            var retinoscopiaAdicionOD = document.getElementById("retinoscopiaAdicionOD").value
-            var retinoscopiaEsferaOI = document.getElementById("retinoscopiaEsferaOI").value
-            var retinoscopiaCilindroOI = document.getElementById("retinoscopiaCilindroOI").value
-            var retinoscopiaEjeOI = document.getElementById("retinoscopiaEjeOI").value
-            var retinoscopiaAdicionOI = document.getElementById("retinoscopiaAdicionOI").value
-            var observacionesRetinoscopia = document.getElementById("observacionesRetinoscopia").value
-
-            //Examen subjetivo
-            var examenEsferaOD = document.getElementById("examenEsferaOD").value
-            var examenCilindroOD = document.getElementById("examenCilindroOD").value
-            var examenEjeOD = document.getElementById("examenEjeOD").value
-            var examenAdicionOD = document.getElementById("examenAdicionOD").value
-            var examenEsferaOI = document.getElementById("examenEsferaOI").value
-            var examenCilindroOI = document.getElementById("examenCilindroOI").value
-            var examenEjeOI = document.getElementById("examenEjeOI").value
-            var examenAdicionOI = document.getElementById("examenAdicionOI").value
-
-            //Afinación
-            var afinacionEsferaOD = document.getElementById("afinacionEsferaOD").value
-            var afinacionCilindroOD = document.getElementById("afinacionCilindroOD").value
-            var afinacionEjeOD = document.getElementById("afinacionEjeOD").value
-            var afinacionAdicionOD = document.getElementById("afinacionAdicionOD").value
-            var afinacionEsferaOI = document.getElementById("afinacionEsferaOI").value
-            var afinacionCilindroOI = document.getElementById("afinacionCilindroOI").value
-            var afinacionEjeOI = document.getElementById("afinacionEjeOI").value
-            var afinacionAdicionOI = document.getElementById("afinacionAdicionOI").value
-            var adicion = document.getElementById("adicion").value
-            var avOD = document.getElementById("avOD").value
-            var avOI = document.getElementById("avOI").value
-            var avAO = document.getElementById("avAO").value
-
-            //DNP
-            var dnpOD = document.getElementById("dnpOD").value
-            var dnpOI = document.getElementById("dnpOI").value
-
-            //Examen externo
-            var examenExternoOD = document.getElementById("examenExternoOD").value
-            var examenExternoOI = document.getElementById("examenExternoOI").value
-
-            //Fijación
-            var fijacionOD = document.getElementById("fijacionOD").value
-            var fijacionOI = document.getElementById("fijacionOI").value
-
-            //Estereopsis
-            var estereopsisInput1 = document.getElementById("estereopsisInput1").value
-            var estereopsisInput2 = document.getElementById("estereopsisInput2").value
-
             //Motilidad ocular
             var hirchberg = document.getElementById("hirchberg").value
             var kappaOD = document.getElementById("kappaOD").value
@@ -663,48 +604,86 @@ onAuthStateChanged(auth, (user) => {
             var duccionesOI = document.getElementById("duccionesOI").value
             var versiones = document.getElementById("versiones").value
 
-            //Medida de la desviación habitual
-            var tipoDeTestCoverTestVL6m = document.getElementById("tipoDeTestCoverTestVL6m").value
-            var vpHabitual = document.getElementById("vpHabitual").value
-            var desviacionCM = document.getElementById("desviacionCM").value
-            var ppcObjetoReal = document.getElementById("ppcObjetoReal").value
-            var luz = document.getElementById("luz").value
-            var luzFiltroRojo = document.getElementById("luzFiltroRojo").value
+            //Alineamiento Ocular
+            var coverTest = document.getElementById("coverTest").value
+            var krimsky = document.getElementById("krimsky").value
+            var white = document.getElementById("white").value
+            var seisSC = document.getElementById("seisSC").value
+            var seisCC = document.getElementById("seisCC").value
+            var seisADD = document.getElementById("seisADD").value
+            var cuarentaSC = document.getElementById("cuarentaSC").value
+            var cuarentaCC = document.getElementById("cuarentaCC").value
+            var cuarentaADD = document.getElementById("cuarentaADD").value
 
-            //Prima cover test
-            var sc6m = document.getElementById("sc6m").value
-            var cc6m = document.getElementById("cc6m").value
-            var sc33cm = document.getElementById("sc33cm").value
-            var cc33cm = document.getElementById("cc33cm").value
-            var sc20cm = document.getElementById("sc20cm").value
-            var cc20cm = document.getElementById("cc20cm").value
+            //Cuadro de medidas
+            var vl1 = document.getElementById("vl1").value
+            var vl2 = document.getElementById("vl2").value
+            var vl3 = document.getElementById("vl3").value
+            var vl4 = document.getElementById("vl4").value
+            var vl5 = document.getElementById("vl5").value
+            var vl6 = document.getElementById("vl6").value
+            var vl7 = document.getElementById("vl7").value
+            var vl8 = document.getElementById("vl8").value
+            var vl9 = document.getElementById("vl9").value
+            var vp1 = document.getElementById("vp1").value
+            var vp2 = document.getElementById("vp2").value
+            var vp3 = document.getElementById("vp3").value
+            var vp4 = document.getElementById("vp4").value
+            var vp5 = document.getElementById("vp5").value
+            var vp6 = document.getElementById("vp6").value
+            var vp7 = document.getElementById("vp7").value
+            var vp8 = document.getElementById("vp8").value
+            var vp9 = document.getElementById("vp9").value
 
-            //Vergencias fusiónales
-            var rfnVL = document.getElementById("rfnVL").value
-            var rfpVL = document.getElementById("rfpVL").value
-            var rfnVP = document.getElementById("rfnVP").value
-            var rfpVP = document.getElementById("rfpVP").value
+            //Valoración acomodativa
+            var acaCalculado = document.getElementById("acaCalculado").value
+            var gradiente = document.getElementById("gradiente").value
+            var amplitudOD = document.getElementById("amplitudOD").value
+            var flexibilidadCpmOD = document.getElementById("flexibilidadCpmOD").value
+            var flexibilidadMasOD = document.getElementById("flexibilidadMasOD").value
+            var flexibilidadMenosOD = document.getElementById("flexibilidadMenosOD").value
+            var aca = document.getElementById("aca").value
+            var amplitudOI = document.getElementById("amplitudOI").value
+            var flexibilidadCpmOI = document.getElementById("flexibilidadCpmOI").value
+            var flexibilidadMasOI = document.getElementById("flexibilidadMasOI").value
+            var flexibilidadMenosOI = document.getElementById("flexibilidadMenosOI").value
+            var amplitudAcomodacion = document.getElementById("amplitudAcomodacion").value
+            var facilidadAcomodativa = document.getElementById("facilidadAcomodativa").value
+            var acomodativaMas = document.getElementById("acomodativaMas").value
+            var acomodativaMenos = document.getElementById("acomodativaMenos").value
+            var arn = document.getElementById("arn").value
+            var arp = document.getElementById("arp").value
+            var retinoscopiaOD = document.getElementById("retinoscopiaOD").value
+            var retinoscopiaOI = document.getElementById("retinoscopiaOI").value
 
-            //Examen de la acomodación
-            var flexibilidadACCOD = document.getElementById("flexibilidadACCOD").value
-            var aaOD = document.getElementById("aaOD").value
-            var aCAODOI = document.getElementById("aCAODOI").value
-            var flexibilidadACCOI = document.getElementById("flexibilidadACCOI").value
-            var aaOI = document.getElementById("aaOI").value
+            //Valoración vergencial
+            var ppcor1 = document.getElementById("ppcor1").value
+            var ppcor2 = document.getElementById("ppcor2").value
+            var luzFiltro1 = document.getElementById("luzFiltro1").value
+            var luzFiltro2 = document.getElementById("luzFiltro2").value
+            var suaves = document.getElementById("suaves").value
+            var pasos = document.getElementById("pasos").value
+            var rfnVl = document.getElementById("rfnVl").value
+            var rfpVl = document.getElementById("rfpVl").value
+            var rfnVp = document.getElementById("rfnVp").value
+            var rfpVp = document.getElementById("rfpVp").value
+            var facilidadVergencia = document.getElementById("facilidadVergencia").value
+            var vergenciaCpm = document.getElementById("vergenciaCpm").value
+            var prismaBe = document.getElementById("prismaBe").value
+            var bi = document.getElementById("bi").value
 
-            //Prescripción óptica
-            var esferaOD2 = document.getElementById("esferaOD2").value
-            var cilindroOD2 = document.getElementById("cilindroOD2").value
-            var ejeOD2 = document.getElementById("ejeOD2").value
-            var addOD2 = document.getElementById("addOD2").value
-            var esferaOI2 = document.getElementById("esferaOI2").value
-            var cilindroOI2 = document.getElementById("cilindroOI2").value
-            var ejeOI2 = document.getElementById("ejeOI2").value
-            var addOI2 = document.getElementById("addOI2").value
-            var tipoLente2 = document.getElementById("tipoLente2").value
-            var filtro2 = document.getElementById("filtro2").value
-            var material2 = document.getElementById("material2").value
-            var uso2 = document.getElementById("uso2").value
+            //Valoración sensorial
+            var worthVL = document.getElementById("worthVL").value
+            var worthVP = document.getElementById("worthVP").value
+            var bagolinni = document.getElementById("bagolinni").value
+            var csaa = document.getElementById("csaa").value
+            var csai = document.getElementById("csai").value
+            var estereopsis = document.getElementById("estereopsis").value
+            var test = document.getElementById("test").value
+            var visionColorOD = document.getElementById("visionColorOD").value
+            var visionColorOI = document.getElementById("visionColorOI").value
+            var fijacionOD = document.getElementById("fijacionOD").value
+            var fijacionOI = document.getElementById("fijacionOI").value
 
             //Diagnostico
             var c1 = document.getElementById("c1").value
@@ -773,9 +752,7 @@ onAuthStateChanged(auth, (user) => {
                 //Objeto anamnesis
                 var datosAnamnesis = {
                     Motivo_Consulta: motivoConsulta,
-                    Antiguedad_Molestia: antiguedadMolestia,
-                    Antecedentes_Personales: antecedentesPersonales,
-                    Antecedentes_Familiares: antecedentesFamiliares
+                    Antecedentes_Anamnesis: antecedentesAnamnesis,
                 }
 
                 //Objeto signos y síntomas
@@ -810,7 +787,7 @@ onAuthStateChanged(auth, (user) => {
 
                 //Objeto agudeza visual
                 var datosAgudezaVisual = {
-                    Optotipo_Utilizado: optotipoUtilizado,
+                    Test_Utilizado: testUtilizado,
                     Lejos_SC_OD: lejosSCOD,
                     Ph_SC_OD: phSCOD,
                     AO_SC_OD_OI: aoSCODOI,
@@ -819,79 +796,6 @@ onAuthStateChanged(auth, (user) => {
                     Lejos_SC_OI: lejosSCOI,
                     Ph_SC_OI: phSCOI,
                     Cerca_SC_OI: cercaSCOI
-                }
-
-                //Objeto queratometria
-                var datosQueratometria = {
-                    Queratometria_OD: queratometriaOD,
-                    Queratometria_Miras_OD: queratometriaMirasOD,
-                    Queratometria_OI: queratometriaOI,
-                    Queratometria_Miras_OI: queratometriaMirasOI,
-                }
-
-                //Objeto retinoscopia
-                var datosRetinoscopia = {
-                    Retinoscopia_Esfera_OD: retinoscopiaEsferaOD,
-                    Retinoscopia_Cilindro_OD: retinoscopiaCilindroOD,
-                    Retinoscopia_Eje_OD: retinoscopiaEjeOD,
-                    Retinoscopia_Adicion_OD: retinoscopiaAdicionOD,
-                    Retinoscopia_Esfera_OI: retinoscopiaEsferaOI,
-                    Retinoscopia_Cilindro_OI: retinoscopiaCilindroOI,
-                    Retinoscopia_Eje_OI: retinoscopiaEjeOI,
-                    Retinoscopia_Adicion_OI: retinoscopiaAdicionOI,
-                    Observaciones_Retinoscopia: observacionesRetinoscopia
-                }
-
-                //Objeto exmen subjetivo
-                var datosExamenSubjetivo = {
-                    Examen_Esfera_OD: examenEsferaOD,
-                    Examen_Cilindro_OD: examenCilindroOD,
-                    Examen_Eje_OD: examenEjeOD,
-                    Examen_Adicion_OD: examenAdicionOD,
-                    Examen_Esfera_OI: examenEsferaOI,
-                    Examen_Cilindro_OI: examenCilindroOI,
-                    Examen_Eje_OI: examenEjeOI,
-                    Examen_Adicion_OI: examenAdicionOI
-                }
-
-                //Objeto afinación
-                var datosAfinacion = {
-                    Afinacion_Esfera_OD: afinacionEsferaOD,
-                    Afinacion_Cilindro_OD: afinacionCilindroOD,
-                    Afinacion_Eje_OD: afinacionEjeOD,
-                    Afinacion_Adicion_OD: afinacionAdicionOD,
-                    Afinacion_Esfera_OI: afinacionEsferaOI,
-                    Afinacion_Cilindro_OI: afinacionCilindroOI,
-                    Afinacion_Eje_OI: afinacionEjeOI,
-                    Afinacion_Adicion_OI: afinacionAdicionOI,
-                    adicion: adicion,
-                    avOD: avOD,
-                    avOI: avOI,
-                    avAO: avAO
-                }
-
-                //Objeto DNP
-                var datosDNP = {
-                    DNP_OD: dnpOD,
-                    DNP_OI: dnpOI
-                }
-
-                //Objeto examen externo
-                var datosExamenExterno = {
-                    Examen_Externo_OD: examenExternoOD,
-                    Examen_Externo_OI: examenExternoOI
-                }
-
-                //Objeto fijación
-                var datosFijacion = {
-                    Fijacion_OD: fijacionOD,
-                    Fijacion_OI: fijacionOI
-                }
-
-                //Objeto estereopsis
-                var datosEstereopsis = {
-                    Test_Estereopsis_Input_1: estereopsisInput1,
-                    Test_Estereopsis_Input_2: estereopsisInput2,
                 }
 
                 //objeto motilidad ocular
@@ -904,57 +808,95 @@ onAuthStateChanged(auth, (user) => {
                     Versiones: versiones,
                 }
 
-                //objeto medida de la desviación habitual
-                var datosMedidaDesviacionHabitual = {
-                    Tipo_De_Test_Cover_Test_VL_6m: tipoDeTestCoverTestVL6m,
-                    Vp_Habitual: vpHabitual,
-                    Desviacion_Cm: desviacionCM,
-                    PPC_Objeto_Real: ppcObjetoReal,
-                    Luz: luz,
-                    Luz_Filtro_Rojo: luzFiltroRojo
+                //Objeto alineamiento ocular
+                var datosAlineamientoOcular = {
+                    Cover_Test: coverTest,
+                    Krimsky: krimsky,
+                    White: white,
+                    Seis_SC : seisSC,
+                    Seis_CC: seisCC,
+                    Seis_ADD: seisADD,
+                    Cuarenta_SC: cuarentaSC,
+                    Cuarenta_CC: cuarentaCC,
+                    Cuarenta_ADD: cuarentaADD 
                 }
 
-                //Objeto prima cover test
-                var datosPrimaCoverTest = {
-                    sc6m: sc6m,
-                    cc6m: cc6m,
-                    sc33cm: sc33cm,
-                    cc33cm: cc33cm,
-                    sc20cm: sc20cm,
-                    cc20cm: cc20cm
+                //Objeto cuadro medidas
+                var datosCuadroMedidas = {
+                    VL_1:vl1,
+                    VL_2:vl2,
+                    VL_3:vl3,
+                    VL_4:vl4,
+                    VL_5:vl5,
+                    VL_6:vl6,
+                    VL_7:vl7,
+                    VL_8:vl8,
+                    VL_9:vl9,
+                    VP_1:vp1,
+                    VP_2:vp2,
+                    VP_3:vp3,
+                    VP_4:vp4,
+                    VP_5:vp5,
+                    VP_6:vp6,
+                    VP_7:vp7,
+                    VP_8:vp8,
+                    VP_9:vp9,
                 }
 
-                //Objeto vergencias fusiónales
-                var datosVergenciasFusionales = {
-                    RFN_VL: rfnVL,
-                    RFP_VL: rfpVL,
-                    RFN_VP: rfnVP,
-                    RFP_VP: rfpVP
+                //Objeto acomodativa
+                var datosAcomodativa = {
+                    Aca_Calculado: acaCalculado,
+                    Gradiente: gradiente,
+                    Amplitud_OD: amplitudOD,
+                    Flexibilidad_Cpm_OD: flexibilidadCpmOD,
+                    Flexibilidad_Mas_OD: flexibilidadMasOD,
+                    Flexibilidad_Menos_OD: flexibilidadMenosOD,
+                    Aca: aca,
+                    Amplitud_OI: amplitudOI,
+                    Flexibilidad_Cpm_OI: flexibilidadCpmOI,
+                    Flexibilidad_Mas_OI: flexibilidadMasOI,
+                    Flexibilidad_Menos_OI: flexibilidadMenosOI,
+                    Amplitud_Acomodacion: amplitudAcomodacion,
+                    Facilidad_Acomodativa: facilidadAcomodativa,
+                    Acomodativa_Mas: acomodativaMas,
+                    Acomodativa_Menos: acomodativaMenos,
+                    Arn: arn,
+                    Arp: arp,
+                    Retinoscopia_OD: retinoscopiaOD,
+                    Retinoscopia_OI: retinoscopiaOI
                 }
 
-                //Objeto examen de la acomodación
-                var datosExamenAcomodacion = {
-                    Flexibilidad_ACC_OD: flexibilidadACCOD,
-                    AA_OD: aaOD,
-                    A_CA_OD_OI: aCAODOI,
-                    Flexibilidad_ACC_OI: flexibilidadACCOI,
-                    AA_OI: aaOI
+                //Objeto valoración general
+                var datosValoracionGeneral = {
+                    Ppcor_1: ppcor1,
+                    Ppcor_2: ppcor2,
+                    Luz_Filtro_1: luzFiltro1,
+                    Luz_Filtro_2: luzFiltro2,
+                    Suaves: suaves,
+                    Pasos: pasos,
+                    Rfn_Vl: rfnVl,
+                    Rfp_Vl: rfpVl,
+                    Rfn_Vp: rfnVp,
+                    Rfp_Vp: rfpVp,
+                    Facilidad_Vergencia: facilidadVergencia,
+                    Vergencia_Cpm: vergenciaCpm,
+                    Prisma_Be: prismaBe,
+                    Bi: bi
                 }
 
-                //Objeto prescripción óptica
-                var datosPrescripcionOptica = {
-                    Esfera_OD: esferaOD2,
-                    Cilindro_OD: cilindroOD2,
-                    Eje_OD: ejeOD2,
-                    Add_OD: addOD2,
-                    Esfera_OI: esferaOI2,
-                    Cilindro_OI: cilindroOI2,
-                    Eje_OI: ejeOI2,
-                    Add_OI: addOI2,
-                    Tipo_Lente: tipoLente2,
-                    Filtro: filtro2,
-                    Material: material2,
-                    Uso: uso2
+                //Objeto valoración sensorial
+                var datosValoracionSensorial = {
+                    Worth_VL: worthVL,
+                    Worth_VP: worthVP,
+                    Bagolinni: bagolinni,
+                    Csaa: csaa,
+                    Csai: csai,
+                    Estereopsis: estereopsis,
+                    Test: test,
+                    Vision_Color_OD: visionColorOD,
+                    Vision_Color_OI: visionColorOI,
+                    Fijacion_OD: fijacionOD,
+                    Fijacion_OI: fijacionOI
                 }
 
                 //Objeto diagnostico
@@ -1008,27 +950,18 @@ onAuthStateChanged(auth, (user) => {
                     DatosSignosSintomas: datosSignosSintomas,
                     DatosLensometria: datosLensometria,
                     DatosAgudezaVisual: datosAgudezaVisual,
-                    DatosQueratometria: datosQueratometria,
-                    DatosRetinoscopia: datosRetinoscopia,
-                    DatosExamenSubjetivo: datosExamenSubjetivo,
-                    DatosAfinacion: datosAfinacion,
-                    DatosDNP: datosDNP,
-                    DatosExamenExterno: datosExamenExterno,
-                    DatosFijacion: datosFijacion,
-                    DatosEstereopsis: datosEstereopsis,
                     DatosMotilidadOcular: datosMotilidadOcular,
-                    DatosMedidaDesviacionHabitual: datosMedidaDesviacionHabitual,
-                    DatosPrimaCoverTest: datosPrimaCoverTest,
-                    DatosVergenciasFusionales: datosVergenciasFusionales,
-                    DatosExamenAcomodacion: datosExamenAcomodacion,
-                    DatosPrescripcionOptica: datosPrescripcionOptica,
+                    DatosAlineamientoOcular: datosAlineamientoOcular,
+                    DatosCuadroMedidas: datosCuadroMedidas,
+                    DatosAcomodativa: datosAcomodativa,
+                    DatosValoracionGeneral: datosValoracionGeneral,
+                    DatosValoracionSensorial: datosValoracionSensorial,
                     DatosDiagnostico: datosDiagnostico,
                     DatosOrigenEnfermedad: datosOrigenEnfermedad,
                     DatosPlanTratamiento: datosPlanTratamiento,
                     DatosRemisiones: datosRemisiones,
                     DatosControl: datosControl,
                     Usuario: user.uid
-
                 }).then(() => {
                     localStorage.setItem("Documento", numeroIdentificacion)
                     Swal.fire({

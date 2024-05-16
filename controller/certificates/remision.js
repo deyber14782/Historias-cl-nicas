@@ -21,8 +21,8 @@ onAuthStateChanged(auth, (user) => {
     if (user) {
         var hoy = new Date()
 
-        document.getElementById("fechaHoy").textContent = "Fecha: " + hoy.getDate() + "/" + hoy.getMonth() + 1 + "/" + hoy.getFullYear()
-        document.getElementById("fechaHoy2").textContent = "Fecha: " + hoy.getDate() + "/" + hoy.getMonth() + 1 + "/" + hoy.getFullYear()
+        document.getElementById("fechaHoy").textContent = "Fecha: " + hoy.getDate() + "/" + (hoy.getMonth() + 1) + "/" + hoy.getFullYear()
+        document.getElementById("fechaHoy2").textContent = "Fecha: " + hoy.getDate() + "/" + (hoy.getMonth() + 1) + "/" + hoy.getFullYear()
 
         Swal.fire({
             title: "Digita el número de documento del paciente",

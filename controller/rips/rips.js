@@ -131,7 +131,7 @@ onAuthStateChanged(auth, (user) => {
                 td5.textContent = doc.data().DatosPersonales.Edad
                 td6.textContent = doc.data().DatosPersonales.Genero
                 td7.textContent = doc.data().DatosPersonales.Codigo
-                td8.textContent = doc.data().DatosDiagnostico.Codigo_Diagnostico_Principal
+
                 td10.textContent = doc.data().DatosControl.No_Factura 
                 td11.textContent = doc.data().DatosControl.Valor_Factura
                 td12.textContent

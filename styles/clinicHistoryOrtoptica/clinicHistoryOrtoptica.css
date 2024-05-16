@@ -297,62 +297,6 @@ table tr td input {
 }
 
 
-/*Contenido Biomicroscopia*/
-
-.form6 {
-    display: grid;
-    row-gap: 10px;
-    padding: 20px;
-    border-style: solid;
-    border-width: 2px;
-    border-radius: 10px;
-}
-
-.box20 {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    column-gap: 50px;
-}
-
-.box20 label {
-    padding: 5px;
-}
-
-.box20 h3 {
-    padding: 5px;
-    font-size: 20px;
-}
-
-.box20 .box_sub_20_1 div {
-    border-style: solid;
-    width: 300px;
-    height: 150px;
-    border-radius: 50%;
-}
-
-.box_sub_20_1 {
-    display: grid;
-}
-
-.box_sub_20_1 textarea {
-    width: 80%;
-}
-
-.box20 .box_sub_20_2 div {
-    border-style: solid;
-    width: 300px;
-    height: 150px;
-    border-radius: 50%;
-}
-
-.box_sub_20_2 {
-    display: grid;
-}
-
-.box_sub_20_2 textarea {
-    width: 80%;
-}
-
 /*Contenido Motiilidad ocular*/
 
 .form7 {
@@ -407,22 +351,8 @@ table tr td input {
     width: 20%;
 }
 
-/*Contenido Reflejos pupilares*/
 
-.form8 {
-    display: grid;
-    row-gap: 10px;
-    padding: 20px;
-    border-style: solid;
-    border-width: 2px;
-    border-radius: 10px;
-}
-
-.box24 select {
-    width: 100%;
-}
-
-/*Contenido Medida de la desviación habitual*/
+/*Contenido Alineación Ocular*/
 
 .form9 {
     display: grid;
@@ -441,6 +371,97 @@ table tr td input {
 .box25 input{
     width: 20%;
 }
+
+/*Contenido Cuadro de medidas*/
+
+.form50{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    column-gap: 1%;
+    row-gap: 10px;
+    padding: 20px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+}
+
+.form50 input{
+    width: 80%;
+}
+
+/*Contenido Valoración acomodativa*/
+
+.form51 {
+    display: grid;
+    row-gap: 10px;
+    padding: 20px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+}
+
+.box51{
+    display: grid;
+    row-gap: 7%;
+    grid-template-rows: 30% 50% 30%;
+}
+
+.box51 input{
+    width: 7.5%;
+}
+
+/*Contenido Valoración vergencial*/
+
+
+.form52 {
+    display: grid;
+    row-gap: 10px;
+    padding: 20px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+}
+
+.box52{
+    display: grid;
+    row-gap: 40%;
+    grid-template-rows: 30% 30%;
+    margin: 1%
+}
+
+.box52 input{
+    width: 13%;
+}
+
+.box52_1{
+    display: grid;
+    row-gap: 40%;
+    grid-template-rows: 30%;
+    margin: 1%
+}
+
+.box52_1 input{
+    width: 9%;
+}
+
+.form53 {
+    display: grid;
+    row-gap: 10px;
+    padding: 20px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+}
+
+.box53{
+    display: grid;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+}
+
+.box53 input{
+    width: 18%;
+}
+
 
 /*Contenido Oftalmoscopia*/
 
@@ -470,315 +491,13 @@ table tr td input {
 }
 
 .box27 input{
-    width: 95%;
+    width: 98%;
 }
 
 .box27 label{
     padding: 50px 50px 50px 0;
 }
 
-/*Contenido Queratometría*/
-
-.queratometriaRetinoscopia{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    column-gap: 1%; 
-}
-
-.form11 {
-    display: grid;
-    row-gap: 10px;
-    padding: 20px;
-    border-style: solid;
-    border-width: 2px;
-    border-radius: 10px;
-}
-
-.box28 {
-    display: grid;
-    grid-template-rows: 50% 50%;
-    row-gap: 20px; 
-    column-gap: 100px;
-}
-
-.box28 input{
-    width: 29%;
-    
-}
-
-.box28 .label{
-    margin-left: 100px;
-}
-
-/*Contenido Retinoscopia estática*/
-
-.form12 {
-    display: grid;
-    row-gap: 20px;
-    padding: 20px;
-    border-style: solid;
-    border-width: 2px;
-    border-radius: 10px;
-}
-
-.box29 {
-    display: grid;
-    grid-template-rows: 50% 50%;
-    row-gap: 20px;  
-}
-
-.box29 input{
-    width: 30%;
-}
-
-.box29 .label{
-    margin-left: 100px;
-}
-
-
-/*Contenido Retinoscopia dinámica*/
-
-.form13 {
-    display: grid;
-    row-gap: 10px;
-    padding: 20px;
-    border-style: solid;
-    border-width: 2px;
-    border-radius: 10px;
-}
-
-.box30 {
-    display: grid;
-    grid-template-rows: 50% 50%;
-    row-gap: 20px;  
-}
-
-.box30 input{
-    width: 30%;
-}
-
-/*Contenido Retinoscopia ciclopejia*/
-
-.form14 {
-    display: grid;
-    row-gap: 10px;
-    padding: 20px;
-    border-style: solid;
-    border-width: 2px;
-    border-radius: 10px;
-}
-
-.box31 {
-    display: grid;
-    grid-template-rows: 20% 20% 20%;
-    row-gap: 20px;  
-}
-
-.box31 input{
-    width: 30%;
-}
-
-/*Contenido Examen subjetivo*/
-
-.examenAfinacion{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    column-gap: 1%; 
-}
-
-.form15 {
-    display: grid;
-    row-gap: 10px;
-    padding: 20px;
-    border-style: solid;
-    border-width: 2px;
-    border-radius: 10px;
-}
-
-.box32 {
-    display: grid;
-    grid-template-rows: 50% 50%;
-    row-gap: 20px;  
-}
-
-.box32 input{
-    width: 20%;
-}
-
-/*Contenido Afinación VL y VP*/
-
-.form17 {
-    display: grid;
-    row-gap: 10px;
-    padding: 20px;
-    border-style: solid;
-    border-width: 2px;
-    border-radius: 10px;
-}
-
-.form33 {
-    display: grid;
-    row-gap: 10px;
-    padding: 20px;
-    border-style: solid;
-    border-width: 2px;
-    border-radius: 10px;
-}
-
-.box33 {
-    display: grid;
-    grid-template-rows: 20% 20% 20%;
-    row-gap: 20px;  
-}
-
-.box33 input{
-    width: 12%;
-}
-
-.box33 .label{
-    margin-left:100px ;
-}
-
-.box33 .input{
-    width: 30%;
-}
-
-
-/*Contenido Flexibilidad de acomodación mnocular*/
-
-.form20 {
-    display: grid;
-    row-gap: 10px;
-    padding: 20px;
-    border-style: solid;
-    border-width: 2px;
-    border-radius: 10px;
-}
-
-.form36 {
-    display: grid;
-    row-gap: 10px;
-    padding: 20px;
-    border-style: solid;
-    border-width: 2px;
-    border-radius: 10px;
-}
-
-.box36 {
-    display: grid;
-    grid-template-rows: 20%;
-    row-gap: 20px;  
-}
-
-
-.box36 input{
-    width: 10%;
-}
-
-/*Contenido Estereopsis*/
-
-.form21 {
-    display: grid;
-    row-gap: 10px;
-    padding: 20px;
-    border-style: solid;
-    border-width: 2px;
-    border-radius: 10px;
-}
-
-.form37 {
-    display: grid;
-    row-gap: 10px;
-    padding: 20px;
-    border-style: solid;
-    border-width: 2px;
-    border-radius: 10px;
-}
-
-.box37 {
-    display: grid;
-    grid-template-rows: 20%;
-    row-gap: 20px;  
-}
-
-
-.box37 input{
-    width: 44%;
-}
-
-/*Contenido DNP*/
-
-.dnpExamen{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    column-gap: 1%;
-}
-
-.form22 {
-    display: grid;
-    row-gap: 10px;
-    padding: 20px;
-    border-style: solid;
-    border-width: 2px;
-    border-radius: 10px;
-}
-
-.form38 {
-    display: grid;
-    row-gap: 10px;
-    padding: 20px;
-    border-style: solid;
-    border-width: 2px;
-    border-radius: 10px;
-}
-
-.box38 {
-    display: grid;
-    grid-template-rows: 20%;
-    row-gap: 20px;  
-}
-
-
-.box38 input{
-    width: 100%;
-}
-
-
-/*Contenido Examen externo*/
-
-.form5 {
-    display: grid;
-    padding: 10px;
-    border-style: solid;
-    border-width: 2px;
-    border-radius: 10px;
-}
-
-.box19 {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    column-gap: 50px;
-}
-
-.box19 label {
-    padding: 5px;
-}
-
-.box_sub_19_1 {
-    display: grid;
-}
-
-.box_sub_19_1 textarea {
-    width: 50%;
-}
-
-.box_sub_19_2 {
-    display: grid;
-}
-
-.box_sub_19_2 textarea {
-    width: 50%;
-}
 
 /*Contenido Prescripción óptica*/
 
@@ -870,8 +589,6 @@ table tr td input {
     width: 25.5%;
 }
 
-
-
 /*Contenido Conducta*/
 
 .form25 {
@@ -940,13 +657,7 @@ table tr td input {
     row-gap: 7%;
 }
 
-.fijacionEstereopsis{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    column-gap: 1%;
-}
-
-.motilidadMedida{
+.motilidadAlineamiento{
     display: grid;
     grid-template-columns: 50% 50%;
     column-gap: 1%;
@@ -956,6 +667,27 @@ table tr td input {
     display: grid;
     grid-template-columns: 50% 50%;
     column-gap: 1%;
+}
+
+.box17_sub1{
+    display: grid;
+    grid-template-columns: 50% 50% 50%;
+}
+
+.box17_sub1 input{
+    width: 20%;
+}
+
+.cuadroValoracion{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    column-gap: 1%;
+}
+
+.vergencialSensorial{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    column-gap: 1%; 
 }
 
 /* Responsive */

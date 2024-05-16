@@ -562,13 +562,13 @@ table tr td input {
 
 .box28 {
     display: grid;
-    grid-template-rows: 50% 50%;
+    grid-template-rows: 20% 20%;
     row-gap: 20px; 
     column-gap: 100px;
 }
 
 .box28 input{
-    width: 28%;
+    width: 90%;
     
 }
 
@@ -595,7 +595,7 @@ table tr td input {
 }
 
 .box29 input{
-    width: 30%;
+    width: 65%;
 }
 
 .box29 .label{
@@ -1005,7 +1005,7 @@ table tr td input {
 }
 
 .box42 div{
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .box41_sub input{
@@ -1035,19 +1035,13 @@ table tr td input {
     transform: translateX(-50%);
 }
 
-.queratometriaRetinoscopia{
+.queratometriaCaso{
     display: grid;
     grid-template-columns: 50% 50%;
     column-gap: 1%;
 }
 
-.examenAfinacion{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    column-gap: 1%;
-}
-
-.examenBiomicroscopia{
+.resultadosBiomicroscopia{
     display: grid;
     grid-template-columns: 50% 50%;
     column-gap: 1%;
@@ -1059,11 +1053,40 @@ table tr td input {
     column-gap: 1%;
 }
 
-.tratamientoRemisiones{
+.form121 {
     display: grid;
-    grid-template-columns: 50% 50%;
-    column-gap: 1%;
+    row-gap: 20px;
+    padding: 20px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: aliceblue;
 }
+
+.box291 {
+    display: grid;
+    grid-template-rows: 50% 50%;
+    row-gap: 20px;  
+}
+
+.box291 input{
+    width: 30%;
+}
+
+.box291 .label{
+    margin-left: 100px;
+}
+
+.box50 input{
+    margin: 1%;
+    width: 32%;
+}
+
+.box51{
+    display: grid;
+    grid-template-columns: 55% 50%;
+}
+
 
 /* Responsive */
 

@@ -25,58 +25,36 @@
                 <a href="#anamnesis">Anamnesis</a>
             </li>
             <li>
+                <a href="#signos_sintomas">Signos y síntomas</a>
+            </li>
+            <li>
                 <a href="#lensometria">Lensometría</a>
             </li>
             <li>
                 <a href="#agudezaVisual">Agudeza Visual</a>
             </li>
             <li>
-                <a href="#queratometria">Queratometria</a>
-            </li>
-            <li>
-                <a href="#retinoscopia">Retinoscopia</a>
-            </li>
-            <li>
-                <a href="#examenSubjetivo">Examen subjetivo</a>
-            </li>
-            <li>
-                <a href="#afinacion">Afinación</a>
-            </li>
-
-            <li>
-                <a href="#dnp">DNP</a>
-            </li>
-
-            <li>
-                <a href="#examenExterno">Examen externo</a>
-            </li>
-
-            <li>
-                <a href="#fijacion">Fijación</a>
-            </li>
-
-            <li>
-                <a href="#estereopsis">Estereopsis</a>
-            </li>
-
-            <li>
                 <a href="#motilidadOcular">Motilidad ocular</a>
             </li>
 
             <li>
-                <a href="#medidaDesviacionHabitual">Medida de la desviación habitual</a>
+                <a href="#alineamientoOcular">Alineamiento Ocular</a>
             </li>
 
             <li>
-                <a href="#prismaCoverTest">Prisma cover test</a>
+                <a href="#cuadroMedidas">Cuadro de medidas</a>
             </li>
 
             <li>
-                <a href="#vergenciasFusionales">Vergencias fusiónales</a>
+                <a href="#valoracionAcomodativa">Valoración acomodativa</a>
             </li>
 
             <li>
-                <a href="#examenAcomodacion">Examen de la acomodación</a>
+                <a href="#valoracionVergencial">Valoración vergencial</a>
+            </li>
+
+            <li>
+                <a href="#valoracionSensorial">Valoración sensorial</a>
             </li>
 
             <li>
@@ -102,8 +80,6 @@
             <li>
                 <a href="#control">Control</a>
             </li>
-
-
         </ul>
     </aside>
     <header>
@@ -248,22 +224,8 @@
                     </div>
                     <div class="box12">
                         <div>
-                            <label>Antiguedad de la molestia: </label>
-                            <textarea id="antiguedadMolestia" readonly></textarea>
-
-                        </div>
-                    </div>
-                    <div class="box12">
-                        <div>
-                            <label>Antecedentes personales: </label>
-                            <textarea id="antecedentesPersonales" readonly></textarea>
-
-                        </div>
-                    </div>
-                    <div class="box12">
-                        <div>
-                            <label>Antecedentes familiares: </label>
-                            <textarea id="antecedentesFamiliares" readonly></textarea>
+                            <label>Antecedentes: </label>
+                            <textarea id="antecedentesAnamnesis" readonly></textarea>
 
                         </div>
                     </div>
@@ -403,13 +365,12 @@
                 </div>
             </div>
 
-
             <h2 id="agudezaVisual">AGUDEZA VISUAL</h2>
             <div class="form4">
                 <div class="box17">
                     <div>
-                        <label>Optotipo utilizado</label>
-                        <input type="text" id="optotipoUtilizado" readonly>
+                        <label>Test utilizado</label>
+                        <input type="text" id="testUtilizado" readonly>
                     </div>
                 </div>
 
@@ -428,202 +389,26 @@
                     <tr>
                         <td>OD</td>
                         <td style="visibility:collapse;"></td>
-                        <td><input id="lejosSCOD" readonly></td>
+                        <td><input id="lejosSCOD" readonly value="20/"></td>
                         <td><input id="phSCOD" readonly></td>
-                        <td colspan="2" rowspan="2"><input id="aoSCODOI" readonly style="height: 70px;"></td>
+                        <td colspan="2" rowspan="2"><input id="aoSCODOI" style="height: 70px;" readonly></td>
                         <td><input id="cercaSCOD" readonly></td>
-                        <td colspan="2" rowspan="2"><input id="aoSCODOI2" readonly style="height: 70px;"></td>
+                        <td colspan="2" rowspan="2"><input id="aoSCODOI2" style="height: 70px;" readonly></td>
                     </tr>
                     <tr>
                         <td>OI</td>
                         <td style="visibility:collapse;"></td>
-                        <td><input id="lejosSCOI" readonly></td>
+                        <td><input id="lejosSCOI" value="20/" readonly></td>
                         <td><input id="phSCOI" readonly></td>
                         <td><input id="cercaSCOI" readonly></td>
                     </tr>
                 </table>
             </div>
 
-            <div class="queratometriaRetinoscopia">
-                <h2 id="queratometria">QUERATOMETRÍA</h2>
-                <h2 id="retinoscopia">RETINOSCOPIA</h2>
-                <div class="form11">
-                    <div class="box28">
-                        <div>
-                            <label>O.D.</label>
-                            <input type="text" id="queratometriaOD" readonly>
-                            <label class="label">Miras</label>
-                            <input type="text" id="queratometriaMirasOD" readonly>
-                        </div>
-                        <div>
-                            <label>O.I.&nbsp</label>
-                            <input type="text" id="queratometriaOI" readonly>
-                            <label class="label">Miras</label>
-                            <input type="text" id="queratometriaMirasOI" readonly>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="form12">
-                    <table>
-                        <tr>
-                            <td style="visibility:collapse;"></td>
-                            <td>Esfera</td>
-                            <td>Cilindro</td>
-                            <td>Eje</td>
-                            <td>Adición</td>
-                        </tr>
-                        <tr>
-                            <td>OD</td>
-                            <td><input id="retinoscopiaEsferaOD"></td>
-                            <td><input id="retinoscopiaCilindroOD" value="-"></td>
-                            <td><input id="retinoscopiaEjeOD"></td>
-                            <td><input id="retinoscopiaAdicionOD" value="+"></td>
-                        </tr>
-                        <tr>
-                            <td>OI</td>
-                            <td><input id="retinoscopiaEsferaOI"></td>
-                            <td><input id="retinoscopiaCilindroOI" value="-"></td>
-                            <td><input id="retinoscopiaEjeOI"></td>
-                            <td><input id="retinoscopiaAdicionOI" value="+"></td>
-                        </tr>
-                    </table>
-                    <div class="box12">
-                        <div>
-                            <label>Observaciones: </label>
-                            <textarea id="observacionesRetinoscopia" readonly></textarea>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="examenAfinacion">
-                <h2 id="examenSubjetivo">EXAMEN SUBJETIVO</h2>
-                <h2 id="afinacion">AFINACIÓN</h2>
-                <div class="form15">
-                    <table>
-                        <tr>
-                            <td style="visibility:collapse;"></td>
-                            <td>Esfera</td>
-                            <td>Cilindro</td>
-                            <td>Eje</td>
-                            <td>Adición</td>
-                        </tr>
-                        <tr>
-                            <td>OD</td>
-                            <td><input id="examenEsferaOD"></td>
-                            <td><input id="examenCilindroOD" value="-"></td>
-                            <td><input id="examenEjeOD"></td>
-                            <td><input id="examenAdicionOD" value="+"></td>
-                        </tr>
-                        <tr>
-                            <td>OI</td>
-                            <td><input id="examenEsferaOI"></td>
-                            <td><input id="examenCilindroOI" value="-"></td>
-                            <td><input id="examenEjeOI"></td>
-                            <td><input id="examenAdicionOI" value="+"></td>
-                        </tr>
-                    </table>
-                </div>
-
-                <div class="form17">
-                    <table>
-                        <tr>
-                            <td style="visibility:collapse;"></td>
-                            <td>Esfera</td>
-                            <td>Cilindro</td>
-                            <td>Eje</td>
-                            <td>Adición</td>
-                        </tr>
-                        <tr>
-                            <td>OD</td>
-                            <td><input id="afinacionEsferaOD"></td>
-                            <td><input id="afinacionCilindroOD" value="-"></td>
-                            <td><input id="afinacionEjeOD"></td>
-                            <td><input id="afinacionAdicionOD" value="+"></td>
-                        </tr>
-                        <tr>
-                            <td>OI</td>
-                            <td><input id="afinacionEsferaOI"></td>
-                            <td><input id="afinacionCilindroOI" value="-"></td>
-                            <td><input id="afinacionEjeOI"></td>
-                            <td><input id="afinacionAdicionOI" value="+"></td>
-                        </tr>
-                    </table>
-                    <div class="box33">
-                        <div>
-                            <label>Adicion</label>
-                            <input type="text" id="adicion" readonly>
-                            <label>A.V. O.D.</label>
-                            <input type="text" id="avOD" readonly>
-                            <label>O.I.</label>
-                            <input type="text" id="avOI" readonly>
-                            <label>A.O.</label>
-                            <input type="text" id="avAO" readonly>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="dnpExamen">
-                <h2 id="dnp">DNP</h2>
-                <h2 id="examenExterno">EXAMEN EXTERNO</h2>
-                <div class="form22">
-                    <div class="box38">
-                        <div>
-                            <label>O.D.</label>
-                            <input type="text" id="dnpOD" readonly>
-                            <label>O.I.</label>
-                            <input type="text" id="dnpOI" readonly>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="form5">
-                    <div class="box19">
-                        <div class="box_sub_19_1">
-                            <label>O.D.</label>
-                            <textarea id="examenExternoOD" readonly></textarea>
-                        </div>
-                        <div class="box_sub_19_2">
-                            <label>O.I.</label>
-                            <textarea id="examenExternoOI" readonly></textarea>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="fijacionEstereopsis">
-                <h2 id="fijacion">FIJACIÓN</h2>
-                <h2 id="estereopsis">ESTEREOPSIS</h2>
-                <div class="form22">
-                    <div class="box38">
-                        <div>
-                            <label>O.D.</label>
-                            <input type="text" id="fijacionOD" readonly>
-                            <label>O.I.</label>
-                            <input type="text" id="fijacionOI" readonly>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="form21">
-                    <div class="box37">
-                        <div>
-                            <label>Test</label>
-                            <input type="text" id="estereopsisInput1" readonly>
-                            <input type="text" id="estereopsisInput2" readonly>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="motilidadMedida">
+            <div class="motilidadAlineamiento">
                 <h2 id="motilidadOcular">MOTILIDAD OCULAR</h2>
-                <h2 id="medidaDesviacionHabitual">DESVIACIÓN HABITUAL</h2>
+                <h2 id="alineamientoOcular">ALINEAMIENTO OCULAR</h2>
                 <div class="form7">
                     <div class="box21">
                         <div>
@@ -654,154 +439,241 @@
                     </div>
                 </div>
 
-                <div class="form9">
-                    <div class="box25">
-                        <div>
-                            <label>Cover Test VL 6m</label>
-                            <input type="text" id="tipoDeTestCoverTestVL6m" readonly>
-                        </div>
-                        <div>
-                            <label>VP (Habitual)</label>
-                            <input type="text" id="vpHabitual" readonly>
-                            <label>cm</label>
-                            <input type="text" id="desviacionCM" readonly>
+                <div class="form4">
+                    <div class="box17">
+                        <div class="box17_sub1">
+                            <div>
+                                <label>Cover test</label>
+                                <input type="text" id="coverTest" readonly>
+                            </div>
+                            <div>
+                                <label>Krimsky</label>
+                                <input type="text" id="krimsky" readonly>
+                            </div>
+                            <div>
+                                <label>White</label>
+                                <input type="text" id="white" readonly>
+                            </div>
                         </div>
                     </div>
-                    <div class="box23">
+
+                    <table>
+                        <tr>
+                            <td style="visibility:collapse;" colspan="1"></td>
+                            <td>S.C</td>
+                            <td>C.C</td>
+                            <td>ADD +3.00</td>
+                        </tr>
+                        <tr>
+                            <td>6m</td>
+                            <td><input id="seisSC" readonly></td>
+                            <td><input id="seisCC" readonly></td>
+                            <td><input id="seisADD" readonly></td>
+                        </tr>
+                        <tr>
+                            <td>40cm</td>
+                            <td><input id="cuarentaSC" readonly></td>
+                            <td><input id="cuarentaCC" readonly></td>
+                            <td><input id="cuarentaADD" readonly></td>
+                        </tr>
+                    </table>
+                </div>
+
+            </div>
+
+
+            <div class="cuadroValoracion">
+                <h2 id="cuadroMedidas">CUADRO DE MEDIDAS</h2>
+                <h2 id="valoracionAcomodativa">VALORACIÓN ACOMODATIVA</h2>
+                <div class="form50">
+                    <div>
+                        <label>V.L</label>
+                        <table>
+                            <tr>
+                                <td><input id="vl1" readonly></td>
+                                <td><input id="vl2" readonly style="background-color: darkkhaki;"></td>
+                                <td><input id="vl3" readonly></td>
+                            </tr>
+                            <tr>
+                                <td><input id="vl4" readonly style="background-color: darkkhaki;"></td>
+                                <td><input id="vl5" readonly style="background-color: darkkhaki;"></td>
+                                <td><input id="vl6" readonly style="background-color: darkkhaki;"></td>
+                            </tr>
+                            <tr>
+                                <td><input id="vl7" readonly></td>
+                                <td><input id="vl8" readonly style="background-color: darkkhaki;"></td>
+                                <td><input id="vl9" readonly></td>
+                            </tr>
+
+                        </table>
+                    </div>
+                    <div>
+                        <label>V.P</label>
+                        <table>
+                            <tr>
+                                <td><input id="vp1" readonly></td>
+                                <td><input id="vp2" readonly style="background-color: darkkhaki;"></td>
+                                <td><input id="vp3" readonly></td>
+                            </tr>
+                            <tr>
+                                <td><input id="vp4" readonly style="background-color: darkkhaki;"></td>
+                                <td><input id="vp5" readonly style="background-color: darkkhaki;"></td>
+                                <td><input id="vp6" readonly style="background-color: darkkhaki;"></td>
+                            </tr>
+                            <tr>
+                                <td><input id="vp7" readonly></td>
+                                <td><input id="vp8" readonly style="background-color: darkkhaki;"></td>
+                                <td><input id="vp9" readonly></td>
+                            </tr>
+
+                        </table>
+                    </div>
+                </div>
+
+                <div class="form51">
+                    <table>
+                        <tr>
+                            <td style="visibility:collapse;" colspan="1"></td>
+                            <td>Amplitud acomodación</td>
+                            <td>Flexibilidad acomodativa</td>
+                            <td>ACA CALCULADO <input style="width: 17%;" id="acaCalculado" readonly> GRADIENTE <input id="gradiente" readonly style="width: 17%;"></td>
+                        </tr>
+                        <tr>
+                            <td>OD</td>
+                            <td><input id="amplitudOD" readonly></td>
+                            <td><input id="flexibilidadCpmOD" readonly style="width: 17%;">cpm<input id="flexibilidadMasOD" readonly value="+" style="width: 17%;">/<input id="flexibilidadMenosOD" readonly value="-" style="width: 17%;"></td>
+                            <td rowspan="2"><input id="aca" readonly style="height: 60px;"></td>
+                        </tr>
+                        <tr>
+                            <td>OI</td>
+                            <td><input id="amplitudOI" readonly></td>
+                            <td><input id="flexibilidadCpmOI" readonly style="width: 17%;">cpm<input id="flexibilidadMasOI" readonly value="+" style="width: 17%;">/<input id="flexibilidadMenosOI" readonly value="-" style="width: 17%;"></td>
+                        </tr>
+                    </table>
+                    <div class="box51">
                         <div>
-                            <label>P.P.C Objeto Real</label>
-                            <input type="text" id="ppcObjetoReal" readonly>
+                            <label>Amplitud de acomodación: </label>
+                            <label>Test</label>
+                            <input id="amplitudAcomodacion" readonly>
                         </div>
                         <div>
-                            <label>LUZ</label>
-                            <input type="text" id="luz" readonly>
+                            <label>Facilidad acomodativa </label>
+                            <input id="facilidadAcomodativa" readonly>
+                            <label>Lentes</label>
+                            <input id="acomodativaMas" value="+" readonly> /
+                            <input id="acomodativaMenos" value="-" readonly>
+                            <label>ARN</label>
+                            <input id="arn" readonly>
+                            <label>ARP</label>
+                            <input id="arp" readonly>
                         </div>
                         <div>
-                            <label>LUZ + Filtro Rojo</label>
-                            <input type="text" id="luzFiltroRojo" readonly>
+                            <label>Retinoscopia MEM OD</label>
+                            <input id="retinoscopiaOD" readonly>
+                            <label>OI</label>
+                            <input id="retinoscopiaOI" readonly>
                         </div>
                     </div>
                 </div>
             </div>
 
+            <div class="vergencialSensorial">
+                <h2 id="valoracionVergencial">VALORACIÓN VERGENCIAL</h2>
+                <h2 id="valoracionSensorial">VALORACIÓN SENSORIAL</h2>
+                <div class="form52">
+                    <div class="box52">
+                       <div>
+                            <label>P.P.C.O.R</label>
+                            <input id="ppcor1" readonly> /
+                            <input id="ppcor2" readonly>
+                            <label>cm</label>
+                            <label>luz+filtro R</label>
+                            <input id="luzFiltro1" readonly> /
+                            <input id="luzFiltro2" readonly>
+                       </div>
+                       <div>
+                            <label>Reservas fusionales Método Suaves</label>
+                            <input id="suaves" readonly>
+                            <label>Pasos</label>
+                            <input id="pasos" readonly>
 
-            <h2 id="prismaCoverTest">PRISMA COVER TEST</h2>
-            <div class="form24">
-                <table>
-                    <tr>
-                        <td>Distancia</td>
-                        <td>SC</td>
-                        <td>CC</td>
-
-                    </tr>
-                    <tr>
-                        <td>6 m</td>
-                        <td><input id="sc6m" readonly></td>
-                        <td><input id="cc6m" readonly></td>
-                    </tr>
-                    <tr>
-                        <td>33 cm</td>
-                        <td><input id="sc33cm" readonly></td>
-                        <td><input id="cc33cm" readonly></td>
-                    </tr>
-                    <tr>
-                        <td>20 cm</td>
-                        <td><input id="sc20cm" readonly></td>
-                        <td><input id="cc20cm" readonly></td>
-                    </tr>
-                </table>
-            </div>
-
-
-            <h2 id="vergenciasFusionales">VERGENCIAS FUSIÓNALES</h2>
-            <div class="form24">
-                <table>
-                    <tr>
-                        <td>Distancia</td>
-                        <td>RFN</td>
-                        <td>RFP</td>
-
-                    </tr>
-                    <tr>
-                        <td>VL</td>
-                        <td><input id="rfnVL" readonly></td>
-                        <td><input id="rfpVL" readonly></td>
-                    </tr>
-                    <tr>
-                        <td>VP</td>
-                        <td><input id="rfnVP" readonly></td>
-                        <td><input id="rfpVP" readonly></td>
-                    </tr>
-                </table>
-            </div>
-
-
-            <h2 id="examenAcomodacion">EXAMEN DE LA ACOMODACIÓN</h2>
-            <div class="form24">
-                <table>
-                    <tr>
-                        <td>AV VP</td>
-                        <td>Flexibilidad de Acc</td>
-                        <td>A:A</td>
-                        <td>A/CA</td>
-                    </tr>
-                    <tr>
-                        <td>OD</td>
-                        <td><input id="flexibilidadACCOD" placeholder="+ / - cpm:" readonly></td>
-                        <td><input id="aaOD" readonly></td>
-                        <td rowspan="2"><input id="aCAODOI" readonly style="height: 60px;"></td>
-                    </tr>
-                    <tr>
-                        <td>OI</td>
-                        <td><input id="flexibilidadACCOI" readonly placeholder="+ / - cpm:"></td>
-                        <td><input id="aaOI" readonly></td>
-                    </tr>
-                </table>
-            </div>
-
-
-            <h2 id="prescripcionOptica">PRESCRIPCIÓN ÓPTICA</h2>
-            <div class="form24">
-                <table>
-                    <tr>
-                        <td style="visibility:collapse;"></td>
-                        <td>Esfera</td>
-                        <td>Cilindro</td>
-                        <td>Eje</td>
-                        <td>Add</td>
-
-                    </tr>
-                    <tr>
-                        <td>OD</td>
-                        <td><input id="esferaOD2" readonly></td>
-                        <td><input id="cilindroOD2" readonly></td>
-                        <td><input id="ejeOD2" readonly></td>
-                        <td><input id="addOD2" readonly></td>
-                    </tr>
-                    <tr>
-                        <td>OI</td>
-                        <td><input id="esferaOI2" readonly></td>
-                        <td><input id="cilindroOI2" readonly></td>
-                        <td><input id="ejeOI2" readonly></td>
-                        <td><input id="addOI2" readonly></td>
-                    </tr>
-                </table>
-                <div class="box39">
-                    <div>
-                        <label>Tipo de lente</label>
-                        <input type="text" id="tipoLente2" readonly>
-                        <label class="label">Filtro</label>
-                        <input type="text" id="filtro2" readonly>
+                       </div> 
                     </div>
+                    <div>
+                        <table>
+                            <tr>
+                                <td>TEST</td>
+                                <td>R.F.N</td>
+                                <td>R.F.P</td>
+                            </tr>
+                            <tr>
+                                <td>V.L</td>
+                                <td><input id="rfnVl" readonly></td>
+                                <td><input id="rfpVl" readonly></td>
+                            </tr>
+                            <tr>
+                                <td>V.P</td>
+                                <td><input id="rfnVp" readonly></td>
+                                <td><input id="rfpVp" readonly></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="box52_1">
+                        <div>
+                            <label>Facilidad de vergencia</label>
+                            <input id="facilidadVergencia" readonly>
+                            <label>cpm</label>
+                            <input id="vergenciaCpm" readonly>
+                            <label>Prismas BE</label>
+                            <input id="prismaBe" readonly>
+                            <label>BI</label>
+                            <input id="bi" readonly>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form53">
+                    <div class="box53">
+                        <div>
+                            <label>Luces de Worth V.L</label>
+                            <input id="worthVL" readonly>
+                            <label>V.P</label>
+                            <input id="worthVP" readonly>
+                        </div>
+                        <div>
+                            <label>Bagolinni CSN</label>
+                            <input id="bagolinni" readonly>
+                            <label>C.S.A.A</label>
+                            <input id="csaa" readonly>
+                            <label>C.S.A.I</label>
+                            <input id="csai" readonly>
+                        </div>
+                        <div>
+                            <label>Estereopsis</label>
+                            <input id="estereopsis" readonly>
+                            <label>segundos/arco</label>
+                            <label>Test</label>
+                            <input id="test" readonly>
+                        </div>
+                        <div>
+                            <label>Visión del color: OD</label>
+                            <input id="visionColorOD" readonly>
+                            <label>OI</label>
+                            <input id="visionColorOI" readonly>
+                </div>
                 </div>
                 <div class="box40">
-                    <div>
-                        <label>Material</label>
-                        <input type="text" id="material2" readonly>
-                        <label class="label">Uso</label>
-                        <input type="text" id="uso2" readonly>
+                        </div>
+                <div class="box40">
+                        <div>
+                            <label>Fijación OD</label>
+                            <input id="fijacionOD" readonly>
+                            <label>OI</label>
+                            <input id="fijacionOI" readonly>
+                        </div>
                     </div>
                 </div>
+
             </div>
 
             <h2 id="diagnostico">DIAGNÓSTICO</h2>

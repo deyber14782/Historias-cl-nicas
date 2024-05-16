@@ -155,90 +155,61 @@ onAuthStateChanged(auth, (user) => {
 
                                                     //Anamnesis
                                                     document.getElementById("motivoConsulta").value = doc.data().DatosAnamnesis.Motivo_Consulta
-                                                    document.getElementById("antiguedadMolestia").value = doc.data().DatosAnamnesis.Antiguedad_Molestia
-                                                    document.getElementById("antecedentesPersonales").value = doc.data().DatosAnamnesis.Antecedentes_Personales
-                                                    document.getElementById("antecedentesFamiliares").value = doc.data().DatosAnamnesis.Antecedentes_Familiares
 
-                                                    //Lensometría
-                                                    document.getElementById("esferaOD").value = doc.data().DatosLensometria.Esfera_OD
-                                                    document.getElementById("cilindroOD").value = doc.data().DatosLensometria.Cilindro_OD
-                                                    document.getElementById("ejeOD").value = doc.data().DatosLensometria.Eje_OD
-                                                    document.getElementById("adicionOD").value = doc.data().DatosLensometria.Adicion_OD
-                                                    document.getElementById("avvlOD").value = doc.data().DatosLensometria.AV_VL_OD
-                                                    document.getElementById("avvpOD").value = doc.data().DatosLensometria.AV_VP_OD
-                                                    document.getElementById("esferaOI").value = doc.data().DatosLensometria.Esfera_OI
-                                                    document.getElementById("cilindroOI").value = doc.data().DatosLensometria.Cilindro_OI
-                                                    document.getElementById("ejeOI").value = doc.data().DatosLensometria.Eje_OI
-                                                    document.getElementById("adicionOI").value = doc.data().DatosLensometria.Adicion_OI
-                                                    document.getElementById("avvlOI").value = doc.data().DatosLensometria.AV_VL_OI
-                                                    document.getElementById("avvpOI").value = doc.data().DatosLensometria.AV_VP_OI
-                                                    document.getElementById("tipoLente").value = doc.data().DatosLensometria.Tipo_Lente
-                                                    document.getElementById("filtro").value = doc.data().DatosLensometria.Filtro
-                                                    document.getElementById("tiempoUso").value = doc.data().DatosLensometria.Tiempo_Uso
-
-                                                    //Agudeza visual
-                                                    document.getElementById("optotipoUtilizado").value = doc.data().DatosAgudezaVisual.Optotipo_Utilizado
-                                                    document.getElementById("lejosSCOD").value = doc.data().DatosAgudezaVisual.Lejos_SC_OD
-                                                    document.getElementById("phSCOD").value = doc.data().DatosAgudezaVisual.Ph_SC_OD
-                                                    document.getElementById("aoSCODOI").value = doc.data().DatosAgudezaVisual.AO_SC_OD_OI
-                                                    document.getElementById("cercaSCOD").value = doc.data().DatosAgudezaVisual.Cerca_SC_OD
-                                                    document.getElementById("aoSCODOI2").value = doc.data().DatosAgudezaVisual.AO_SC_OD_OI_2
-                                                    document.getElementById("lejosSCOI").value = doc.data().DatosAgudezaVisual.Lejos_SC_OI
-                                                    document.getElementById("phSCOI").value = doc.data().DatosAgudezaVisual.Ph_SC_OI
-                                                    document.getElementById("cercaSCOI").value = doc.data().DatosAgudezaVisual.Cerca_SC_OI
+                                                    //Lentes en uso
+                                                    document.getElementById("material").value = doc.data().DatosLentesUso.Material
+                                                    document.getElementById("tipoLente").value = doc.data().DatosLentesUso.Tipo_Lente
+                                                    document.getElementById("lejanaEsferaOD").value = doc.data().DatosLentesUso.Lejana_Esfera_OD
+                                                    document.getElementById("lejanaCilindroOD").value = doc.data().DatosLentesUso.Lejana_Cilindro_OD
+                                                    document.getElementById("lejanaEjeOD").value = doc.data().DatosLentesUso.Lejana_Eje_OD
+                                                    document.getElementById("lejanaAVOD").value = doc.data().DatosLentesUso.Lejana_AV_OD
+                                                    document.getElementById("proximaEsferaOD").value = doc.data().DatosLentesUso.Proxima_Esfera_OD
+                                                    document.getElementById("proximaCilindroOD").value = doc.data().DatosLentesUso.Proxima_Cilindro_OD
+                                                    document.getElementById("proximaEjeOD").value = doc.data().DatosLentesUso.Proxima_Eje_OD
+                                                    document.getElementById("proximaAVOD").value = doc.data().DatosLentesUso.Proxima_AV_OD
+                                                    document.getElementById("filtro").value = doc.data().DatosLentesUso.Filtro
+                                                    document.getElementById("lejanaEsferaOI").value = doc.data().DatosLentesUso.Lejana_Esfera_OI
+                                                    document.getElementById("lejanaCilindroOI").value = doc.data().DatosLentesUso.Lejana_Cilindro_OI
+                                                    document.getElementById("lejanaEjeOI").value = doc.data().DatosLentesUso.Lejana_Eje_OI
+                                                    document.getElementById("lejanaAVOI").value = doc.data().DatosLentesUso.Lejana_AV_OI
+                                                    document.getElementById("proximaEsferaOI").value = doc.data().DatosLentesUso.Proxima_Esfera_OI
+                                                    document.getElementById("proximaCilindroOI").value = doc.data().DatosLentesUso.Proxima_Cilindro_OI
+                                                    document.getElementById("proximaEjeOI").value = doc.data().DatosLentesUso.Proxima_Eje_OI
+                                                    document.getElementById("proximaAVOI").value = doc.data().DatosLentesUso.Proxima_AV_OI
+                                                    document.getElementById("dosPares").value = doc.data().DatosLentesUso.Dos_Pares
 
                                                     //Queratometría
                                                     document.getElementById("queratometriaOD").value = doc.data().DatosQueratometria.Queratometria_OD
-                                                    document.getElementById("queratometriaMirasOD").value = doc.data().DatosQueratometria.Queratometria_Miras_OD
                                                     document.getElementById("queratometriaOI").value = doc.data().DatosQueratometria.Queratometria_OI
-                                                    document.getElementById("queratometriaMirasOI").value = doc.data().DatosQueratometria.Queratometria_Miras_OI
 
-                                                    //Retinoscopia
-                                                    document.getElementById("retinoscopiaEstaticaOD").value = doc.data().DatosRetinoscopia.Retinoscopia_Estatica_OD
-                                                    document.getElementById("retinoscopiaEstaticaODAV").value = doc.data().DatosRetinoscopia.Retinoscopia_Estatica_OD_AV
-                                                    document.getElementById("retinoscopiaEstaticaOI").value = doc.data().DatosRetinoscopia.Retinoscopia_Estatica_OI
-                                                    document.getElementById("retinoscopiaEstaticaOIAV").value = doc.data().DatosRetinoscopia.Retinoscopia_Estatica_OI_AV
-                                                    document.getElementById("observacionesRetinoscopia").value = doc.data().DatosRetinoscopia.Observaciones_Retinoscopia
+                                                    //Tipos de caso
+                                                    document.getElementById("tipoCaso").value = doc.data().DatosTipoCaso.Tipo_Caso
 
-                                                    //Examen subjetivo
-                                                    document.getElementById("examenSubjetivoOD").value = doc.data().DatosExamenSubjetivo.Examen_Subjetivo_OD
-                                                    document.getElementById("examenSubjetivoAVOD").value = doc.data().DatosExamenSubjetivo.Examen_Subjetivo_AV_OD
-                                                    document.getElementById("examenSubjetivoAVODEstenopeico").value = doc.data().DatosExamenSubjetivo.Examen_Subjetivo_AV_OD_Estenopeico
-                                                    document.getElementById("examenSubjetivoOI").value = doc.data().DatosExamenSubjetivo.Examen_Subjetivo_OI
-                                                    document.getElementById("examenSubjetivoAVOI").value = doc.data().DatosExamenSubjetivo.Examen_Subjetivo_AV_OI
-                                                    document.getElementById("examenSubjetivoAVOIEstenopeico").value = doc.data().DatosExamenSubjetivo.Examen_Subjetivo_AV_OI_Estenopeico
-
-                                                    //Afinación
-                                                    document.getElementById("afinacionOD").value = doc.data().DatosAfinacion.afinacionOD
-                                                    document.getElementById("afinacionAVOD").value = doc.data().DatosAfinacion.afinacionAVOD
-                                                    document.getElementById("afinacionOI").value = doc.data().DatosAfinacion.afinacionOI
-                                                    document.getElementById("afinacionAVOI").value = doc.data().DatosAfinacion.afinacionAVOI
-                                                    document.getElementById("adicion").value = doc.data().DatosAfinacion.adicion
-                                                    document.getElementById("avOD").value = doc.data().DatosAfinacion.avOD
-                                                    document.getElementById("avOI").value = doc.data().DatosAfinacion.avOI
-                                                    document.getElementById("avAO").value = doc.data().DatosAfinacion.avAO
-
-                                                    //Examen externo
-                                                    document.getElementById("examenExternoOD").value = doc.data().DatosExamenExterno.Examen_Externo_OD
-                                                    document.getElementById("examenExternoOI").value = doc.data().DatosExamenExterno.Examen_Externo_OI
+                                                    //Topografía
+                                                    document.getElementById("topografiaOD").value = doc.data().DatosTopografia.Topografia_OD
+                                                    document.getElementById("topografiaOI").value = doc.data().DatosTopografia.Topografia_OI
 
                                                     //Biomicroscopia
                                                     document.getElementById("descripcionBiomicroscopiaOD").value = doc.data().DatosBiomicroscopia.Descripcion_Biomicroscopia_OD
                                                     document.getElementById("descripcionBiomicroscopiaOI").value = doc.data().DatosBiomicroscopia.Descripcion_Biomicroscopia_OI
 
+                                                    //Observaciones
+                                                    document.getElementById("observaciones").value = doc.data().DatosObservaciones.Observaciones
+
                                                     //Lentes de prueba
                                                     document.getElementById("curvaBaseOD").value = doc.data().DatosLentesPrueba.Curva_Base_OD
                                                     document.getElementById("poderOD").value = doc.data().DatosLentesPrueba.Poder_OD
                                                     document.getElementById("diametroOD").value = doc.data().DatosLentesPrueba.Diametro_OD
-                                                    document.getElementById("diseñoOD").value = doc.data().DatosLentesPrueba.Diseño_OD
+                                                    document.getElementById("diametroOD").value = doc.data().DatosLentesPrueba.Diametro_OD
+                                                    document.getElementById("diseñoCAOD").value = doc.data().DatosLentesPrueba.Diseño_CA_OD
+                                                    document.getElementById("diseñoCPOD").value = doc.data().DatosLentesPrueba.Diseño_CP_OD
                                                     document.getElementById("materialOD").value = doc.data().DatosLentesPrueba.Material_OD
-                                                    document.getElementById("zoOD").value = doc.data().DatosLentesPrueba.ZO_OD
+                                                    document.getElementById("diseñoCAOI").value = doc.data().DatosLentesPrueba.Diseño_CA_OI
+                                                    document.getElementById("diseñoCPOI").value = doc.data().DatosLentesPrueba.Diseño_CP_OI
                                                     document.getElementById("curvaBaseOI").value = doc.data().DatosLentesPrueba.Curva_Base_OI
                                                     document.getElementById("poderOI").value = doc.data().DatosLentesPrueba.Poder_OI
                                                     document.getElementById("diametroOI").value = doc.data().DatosLentesPrueba.Diametro_OI
-                                                    document.getElementById("diseñoOI").value = doc.data().DatosLentesPrueba.Diseño_OI
                                                     document.getElementById("materialOI").value = doc.data().DatosLentesPrueba.Material_OI
-                                                    document.getElementById("zoOI").value = doc.data().DatosLentesPrueba.ZO_OI
 
                                                     //Sobre-refracción
                                                     document.getElementById("refraccionOD").value = doc.data().DatosSobreRefraccion.Refraccion_OD
@@ -252,43 +223,27 @@ onAuthStateChanged(auth, (user) => {
                                                     document.getElementById("subjetivoOI").value = doc.data().DatosSobreSubjetivo.Subjetivo_OI
                                                     document.getElementById("subjetivoAVOI").value = doc.data().DatosSobreSubjetivo.Subjetivo_AV_OI
 
-                                                    //Lente final
+                                                    //Fluorograma
+                                                    document.getElementById("observacionesFluorograma").value = doc.data().DatosFluorograma.Observaciones_Fluorograma
+
+                                                    //Lente a solicitar
                                                     document.getElementById("curvaBaseOD2").value = doc.data().DatosLenteFinal.Curva_Base_OD
                                                     document.getElementById("poderOD2").value = doc.data().DatosLenteFinal.Poder_OD
                                                     document.getElementById("diametroOD2").value = doc.data().DatosLenteFinal.Diametro_OD
-                                                    document.getElementById("diseñoOD2").value = doc.data().DatosLenteFinal.Diseño_OD
+                                                    document.getElementById("diseñoCAOD2").value = doc.data().DatosLenteFinal.Diseño_CA_OD
+                                                    document.getElementById("diseñoCPOD2").value = doc.data().DatosLenteFinal.Diseño_CP_OD
                                                     document.getElementById("materialOD2").value = doc.data().DatosLenteFinal.Material_OD
-                                                    document.getElementById("zoOD2").value = doc.data().DatosLenteFinal.ZO_OD
                                                     document.getElementById("curvaBaseOI2").value = doc.data().DatosLenteFinal.Curva_Base_OI
                                                     document.getElementById("poderOI2").value = doc.data().DatosLenteFinal.Poder_OI
                                                     document.getElementById("diametroOI2").value = doc.data().DatosLenteFinal.Diametro_OI
-                                                    document.getElementById("diseñoOI2").value = doc.data().DatosLenteFinal.Diseño_OI
+                                                    document.getElementById("diseñoCAOI2").value = doc.data().DatosLenteFinal.Diseño_CA_OI
+                                                    document.getElementById("diseñoCPOI2").value = doc.data().DatosLenteFinal.Diseño_CP_OI
                                                     document.getElementById("materialOI2").value = doc.data().DatosLenteFinal.Material_OI
-                                                    document.getElementById("zoOI2").value = doc.data().DatosLenteFinal.ZO_OI
+                                                    document.getElementById("horarioUso").value = doc.data().DatosLenteFinal.Horario_Uso
+                                                    document.getElementById("liquidosRecomendados").value = doc.data().DatosLenteFinal.Liquidos_Recomendados
+                                                    document.getElementById("observacionesAdicionales").value = doc.data().DatosLenteFinal.Observaciones_Adicionales
+                                                    document.getElementById("conducta").value = doc.data().DatosLenteFinal.Conducta
 
-                                                    //Diagnostico
-                                                    document.getElementById("c1").value = doc.data().DatosDiagnostico.Codigo_Diagnostico_Principal
-                                                    document.getElementById("c_1").value = doc.data().DatosDiagnostico.Diagnostico_Principal
-                                                    document.getElementById("c2").value = doc.data().DatosDiagnostico.Codigo_Diagnostico_R1
-                                                    document.getElementById("c_2").value = doc.data().DatosDiagnostico.Diagnostico_R1
-                                                    document.getElementById("c3").value = doc.data().DatosDiagnostico.Codigo_Diagnostico_R2
-                                                    document.getElementById("c_3").value = doc.data().DatosDiagnostico.Diagnostico_R2
-                                                    document.getElementById("digitarCodigo1").value = doc.data().DatosDiagnostico.Codigo_Digitado1
-                                                    document.getElementById("digitarCodigo2").value = doc.data().DatosDiagnostico.Codigo_Digitado2
-                                                    document.getElementById("digitarCodigo3").value = doc.data().DatosDiagnostico.Codigo_Digitado3
-
-                                                    //Origen de la enfermedad
-                                                    document.getElementById("pacienteSano").value = doc.data().DatosOrigenEnfermedad.Paciente_Sano
-                                                    document.getElementById("enfermedadGeneralComun").value = doc.data().DatosOrigenEnfermedad.Enfermedad_General_Comun
-                                                    document.getElementById("enfermedadProfesionalOcupacional").value = doc.data().DatosOrigenEnfermedad.Enfermedad_Profesional_Ocupacional
-                                                    document.getElementById("accidenteTrabajo").value = doc.data().DatosOrigenEnfermedad.Accidente_Trabajo
-                                                    document.getElementById("accidenteTrabajoFueraTrabajo").value = doc.data().DatosOrigenEnfermedad.Accidente_Trabajo_Fuera_Trabajo
-
-                                                    //Plan de tratamiento
-                                                    document.getElementById("planTratamientoDB").value = doc.data().DatosPlanTratamiento.Plan_Tratamiento
-
-                                                    //Remisiones
-                                                    document.getElementById("remisionesDB").value = doc.data().DatosRemisiones.Remisiones
 
                                                     //Control
                                                     document.getElementById("controlDB").value = doc.data().DatosControl.Control
